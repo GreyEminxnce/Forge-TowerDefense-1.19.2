@@ -26,8 +26,8 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import java.util.function.Supplier;
 public class StartBlock extends Block implements Runnable{
-    public int health = 100;
-    public int new_health = 100;
+    public static int health = 100;
+    public static int new_health = 100;
     public Player player;
     public StartBlock(Properties properties) {
         super(properties);
@@ -38,7 +38,6 @@ public class StartBlock extends Block implements Runnable{
                                  InteractionHand hand, BlockHitResult blockHitResult) {
         if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND)
         {
-            this.player = player;
             ServerPlayer test = (ServerPlayer) player;
             test.setGameMode(GameType.SURVIVAL);
             player.setPos(0, 80, 0);
@@ -48,6 +47,7 @@ public class StartBlock extends Block implements Runnable{
             player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 2147483647, 255));
             ((ServerPlayer) player).setExperienceLevels(health);
 
+            this.player = player;
             StartBlock obj = new StartBlock((BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()));
             Thread thread = new Thread(obj);
@@ -57,20 +57,31 @@ public class StartBlock extends Block implements Runnable{
     }
     public void run()
     {
+        System.out.println("Works");
         while (true)
         {
-            if(new_health < health)
-            {
+            player.sendSystemMessage(Component.literal("While loop executes " + new_health));
+         try {
+            TimeUnit.SECONDS.sleep(5);
+        }
+        catch (java.lang.InterruptedException exception) {
+            System.out.println("Something went wrong");
+        }            if (new_health < health) {
+                player.sendSystemMessage(Component.literal("Current health is" + health + "New health is " + new_health));
                 health = new_health;
                 ((ServerPlayer) player).setExperienceLevels(health);
-        }
-             try {
-                TimeUnit.SECONDS.sleep(30);
             }
-            catch (java.lang.InterruptedException exception)
+            if (health == 0)
             {
-                System.out.println("Something went wrong");
+                player.sendSystemMessage(Component.literal("You lose!"));
+                break;
             }
         }
+/*         try {
+            TimeUnit.SECONDS.sleep(30);
+        }
+        catch (java.lang.InterruptedException exception) {
+            System.out.println("Something went wrong");
+        }*/
     }
 }

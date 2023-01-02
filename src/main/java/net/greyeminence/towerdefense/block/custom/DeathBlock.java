@@ -22,7 +22,8 @@ public class DeathBlock extends MagmaBlock {
     public void stepOn(Level p_153777_, BlockPos p_153778_, BlockState p_153779_, Entity p_153780_) {
         if (!p_153780_.isSteppingCarefully() && p_153780_ instanceof LivingEntity && !(p_153780_ instanceof Player) && !EnchantmentHelper.hasFrostWalker((LivingEntity) p_153780_)) {
             p_153780_.hurt(DamageSource.HOT_FLOOR, 100.0F);
-
+            StartBlock.new_health--;
+            System.out.println("New health is" + StartBlock.new_health);
         }
     }
 }
