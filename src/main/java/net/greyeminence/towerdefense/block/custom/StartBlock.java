@@ -1,5 +1,8 @@
 package net.greyeminence.towerdefense.block.custom;
 
+import java.util.concurrent.TimeUnit;
+
+import net.greyeminence.towerdefense.item.ModCreativeModeTab;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -16,10 +19,12 @@ import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import java.util.function.Supplier;
-public class StartBlock extends Block {
+public class StartBlock extends Block implements Runnable{
     public StartBlock(Properties properties) {
         super(properties);
     }
@@ -37,7 +42,21 @@ public class StartBlock extends Block {
             player.setHealth(20);
             player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 2147483647, 255));
 
+            StartBlock obj = new StartBlock((BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()));
+            Thread thread = new Thread(obj);
+            thread.start();
         }
         return super.use(state, level, blockPos, player, hand, blockHitResult);
+    }
+    public void run()
+    {
+             try {
+                TimeUnit.SECONDS.sleep(30);
+            }
+            catch (java.lang.InterruptedException exception)
+            {
+                System.out.println("Something went wrong");
+            }
     }
 }
