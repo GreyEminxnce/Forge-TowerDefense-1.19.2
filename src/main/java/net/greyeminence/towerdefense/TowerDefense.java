@@ -50,7 +50,7 @@ public class TowerDefense
 
 //Methode, die das Spiel steuert
 //Setup
-//Alle Spieler in Gamemode 0 - keine Lösung gefunden
+//Alle Spieler in Gamemode 0 - keine Lösung gefunden - :) doch, Casting regelt
 //Alle Spieler müssen an einen Ort teleportiert werden - done
 //Alle Spieler brauchen ein leeres Inventar - done
 //Alle Spieler bekommen etwas ins Inv - done

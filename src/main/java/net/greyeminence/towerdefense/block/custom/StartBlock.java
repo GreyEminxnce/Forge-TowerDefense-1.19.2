@@ -2,6 +2,7 @@ package net.greyeminence.towerdefense.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -12,6 +13,7 @@ import net.minecraft.world.entity.player.Abilities;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -27,13 +29,15 @@ public class StartBlock extends Block {
                                  InteractionHand hand, BlockHitResult blockHitResult) {
         if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND)
         {
+            ServerPlayer test = (ServerPlayer) player;
+            test.setGameMode(GameType.SURVIVAL);
             player.setPos(0, 80, 0);
             player.getInventory().clearContent();
             player.getInventory().add(Items.STONE_SWORD.getDefaultInstance());
             player.setHealth(20);
             player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 2147483647, 255));
-        }
 
+        }
         return super.use(state, level, blockPos, player, hand, blockHitResult);
     }
 }
