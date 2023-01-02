@@ -1,6 +1,8 @@
 package net.greyeminence.towerdefense;
 
 import com.mojang.logging.LogUtils;
+import net.greyeminence.towerdefense.block.ModBlocks;
+import net.greyeminence.towerdefense.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +23,8 @@ public class TowerDefense
     public TowerDefense()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,3 +47,27 @@ public class TowerDefense
         }
     }
 }
+
+//Methode, die das Spiel steuert
+//Setup
+//Alle Spieler in Gamemode 0 - keine Lösung gefunden
+//Alle Spieler müssen an einen Ort teleportiert werden - done
+//Alle Spieler brauchen ein leeres Inventar - done
+//Alle Spieler bekommen etwas ins Inv - done
+//Alle Spieler werden gefullhealt - done
+//Kein Hunger - done
+//Leben werden aufgefüllt
+//Runden
+//Schleife für die Runden
+//Mobs werden gespawnt
+//Mobs folgen der Strecke
+//Lebenscheck/-update
+//Check, ob alle Monster tot sind
+//Ende der Runde
+//nächste Runde startet in x Sekunden
+
+//Spielende
+//Gewonnen, wenn alle Runden überlebt
+//sonst Verloren
+//Alle Monster killen
+//Alle Tower entfernen
