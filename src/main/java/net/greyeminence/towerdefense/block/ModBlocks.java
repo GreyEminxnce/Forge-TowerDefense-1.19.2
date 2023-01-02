@@ -31,11 +31,13 @@ public class ModBlocks {
             () -> new StartBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TOWERDEFENSE_TAB);
 
+    public static final RegistryObject<Block> DEATH_BLOCK = registerBlock("death_block",
+            () -> new DeathBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TOWERDEFENSE_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
-        return toReturn;
-    }
+        registerBlockItem(name, toReturn, tab); return toReturn;}
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                             CreativeModeTab tab) {

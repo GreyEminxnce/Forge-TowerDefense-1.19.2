@@ -18,6 +18,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -25,6 +26,9 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import java.util.function.Supplier;
 public class StartBlock extends Block implements Runnable{
+    public int health = 100;
+    public int new_health = 100;
+    public Player player;
     public StartBlock(Properties properties) {
         super(properties);
     }
@@ -34,6 +38,7 @@ public class StartBlock extends Block implements Runnable{
                                  InteractionHand hand, BlockHitResult blockHitResult) {
         if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND)
         {
+            this.player = player;
             ServerPlayer test = (ServerPlayer) player;
             test.setGameMode(GameType.SURVIVAL);
             player.setPos(0, 80, 0);
@@ -41,6 +46,7 @@ public class StartBlock extends Block implements Runnable{
             player.getInventory().add(Items.STONE_SWORD.getDefaultInstance());
             player.setHealth(20);
             player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 2147483647, 255));
+            ((ServerPlayer) player).setExperienceLevels(health);
 
             StartBlock obj = new StartBlock((BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()));
@@ -51,6 +57,13 @@ public class StartBlock extends Block implements Runnable{
     }
     public void run()
     {
+        while (true)
+        {
+            if(new_health < health)
+            {
+                health = new_health;
+                ((ServerPlayer) player).setExperienceLevels(health);
+        }
              try {
                 TimeUnit.SECONDS.sleep(30);
             }
@@ -58,5 +71,6 @@ public class StartBlock extends Block implements Runnable{
             {
                 System.out.println("Something went wrong");
             }
+        }
     }
 }

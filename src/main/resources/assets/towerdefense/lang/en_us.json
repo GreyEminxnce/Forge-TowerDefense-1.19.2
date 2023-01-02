@@ -1,4 +1,5 @@
 {
   "block.towerdefense.start_block": "Start Block",
+  "block.towerdefense.death_block": "Death Block",
   "itemGroup.towerdefensetab": "Tower Defense Tab"
 }
