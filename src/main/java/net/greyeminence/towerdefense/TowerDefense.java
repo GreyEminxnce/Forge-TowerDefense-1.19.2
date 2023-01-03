@@ -56,12 +56,12 @@ public class TowerDefense
 //Alle Spieler bekommen etwas ins Inv - done
 //Alle Spieler werden gefullhealt - done
 //Kein Hunger - done
-//Leben werden aufgefüllt
+//Leben werden aufgefüllt - done
 //Runden
 //Schleife für die Runden
-//Mobs werden gespawnt
+//Mobs werden gespawnt - done :D
 //Mobs folgen der Strecke
-//Lebenscheck/-update
+//Lebenscheck/-update - done
 //Check, ob alle Monster tot sind
 //Ende der Runde
 //nächste Runde startet in x Sekunden
