@@ -1,8 +1,7 @@
 package net.greyeminence.towerdefense.block.custom;
 
-import net.minecraft.client.Minecraft;
+import net.greyeminence.towerdefense.Game;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,10 +19,9 @@ public class DeathBlock extends MagmaBlock {
 
     @Override
     public void stepOn(Level p_153777_, BlockPos p_153778_, BlockState p_153779_, Entity p_153780_) {
-        if (!p_153780_.isSteppingCarefully() && p_153780_ instanceof LivingEntity && !(p_153780_ instanceof Player) && !EnchantmentHelper.hasFrostWalker((LivingEntity) p_153780_)) {
-            p_153780_.hurt(DamageSource.HOT_FLOOR, 100.0F);
-            StartBlock.new_health--;
-            System.out.println("New health is" + StartBlock.new_health);
+        if (p_153780_.isAlive() && p_153780_ instanceof LivingEntity && !(p_153780_ instanceof Player) && !EnchantmentHelper.hasFrostWalker((LivingEntity) p_153780_)) {
+            p_153780_.kill();
+            Game.new_health--;
         }
     }
 }
