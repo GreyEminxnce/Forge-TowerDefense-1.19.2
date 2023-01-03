@@ -1,5 +1,6 @@
 {
   "block.towerdefense.start_block": "Start Block",
   "block.towerdefense.death_block": "Death Block",
+  "item.towerdefense.student_spawn_egg": "Student Spawn Egg",
   "itemGroup.towerdefensetab": "Tower Defense Tab"
 }

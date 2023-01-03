@@ -2,6 +2,7 @@ package net.greyeminence.towerdefense;
 
 import com.mojang.logging.LogUtils;
 import net.greyeminence.towerdefense.block.ModBlocks;
+import net.greyeminence.towerdefense.entity.ModEntityTypes;
 import net.greyeminence.towerdefense.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,7 @@ public class TowerDefense
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
