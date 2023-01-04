@@ -26,4 +26,10 @@ public class Student extends Monster
     {
         this.goalSelector.addGoal(1, new EnterExitGoal(ModBlocks.DEATH_BLOCK.get(), this, 1.0, 1000, 255));
     }
+
+    @Override
+     public boolean shouldDropExperience()
+    {
+        return false;
+    }
 }
