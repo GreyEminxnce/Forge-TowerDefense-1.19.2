@@ -1,5 +1,6 @@
 package net.greyeminence.towerdefense.item;
 
+import net.greyeminence.towerdefense.OnePerBlockSpawnEggItem;
 import net.greyeminence.towerdefense.TowerDefense;
 import net.greyeminence.towerdefense.block.ModBlocks;
 import net.greyeminence.towerdefense.entity.ModEntityTypes;
@@ -19,6 +20,9 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.STUDENT, 0x22b341, 0x19732e,
                     new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
 
+    public static final RegistryObject<Item> TEACHER_SPAWN_EGG = ITEMS.register("teacher_spawn_egg",
+            () -> new OnePerBlockSpawnEggItem(ModEntityTypes.TEACHER, 0xff1493, 0xffaeb9,
+                    new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

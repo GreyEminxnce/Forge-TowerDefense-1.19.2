@@ -30,7 +30,11 @@ public class Teacher extends Monster implements RangedAttackMob
     {
         return Monster.createMobAttributes()
                 .add(Attributes.MOVEMENT_SPEED, 0)
-                .add(Attributes.ATTACK_DAMAGE, 1)
+                .add(Attributes.ATTACK_DAMAGE, Attributes.ATTACK_DAMAGE.getDefaultValue())
+                .add(Attributes.ATTACK_SPEED, Attributes.ATTACK_SPEED.getDefaultValue())
+                .add(Attributes.ATTACK_KNOCKBACK, Attributes.ATTACK_KNOCKBACK.getDefaultValue())
+                .add(Attributes.KNOCKBACK_RESISTANCE, Double.MAX_VALUE)
+                .add(ForgeMod.ATTACK_RANGE.get(), 3)
                 .build();
     }
 

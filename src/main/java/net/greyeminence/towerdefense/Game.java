@@ -2,36 +2,35 @@ package net.greyeminence.towerdefense;
 
 import net.greyeminence.towerdefense.block.custom.StartBlock;
 import net.greyeminence.towerdefense.entity.ModEntityTypes;
+import net.greyeminence.towerdefense.entity.custom.Teacher;
 import net.greyeminence.towerdefense.item.ModItems;
 import net.minecraft.core.BlockPos;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameType;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.Vec3;
 
-import javax.annotation.Nullable;
+import java.util.LinkedList;
 import java.util.concurrent.TimeUnit;
 
 public class Game implements Runnable {
-    public Player player;
-    public static int health = 100;
-    public static int new_health = 100;
-    private Entity[] entities = new Entity[50];
+    private static final int MAX_STUDENT_AMOUNT = 50;
+    private static final int MAX_TEACHER_AMOUNT = 50;
+    private static final int MAX_HEALTH = 100;
+    public static Player player;
+    public static int health = MAX_HEALTH;
+    public static int new_health = MAX_HEALTH;
+    private static Entity[] students = new Entity[MAX_STUDENT_AMOUNT];
+    public static LinkedList<BlockPos> teacherPositions = new LinkedList<BlockPos>();
 
     private ItemStack studentItemStack = ModItems.STUDENT_SPAWN_EGG.get().getDefaultInstance();
 
@@ -54,196 +53,196 @@ public class Game implements Runnable {
     {
         switch (roundNumber) {
             case 1 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 1;
             }
             case 2 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 2;
             }
             case 3 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 3;
             }
             case 4 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 4;
             }
             case 5 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 5;
             }
             case 6 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 6;
             }
             case 7 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 7;
             }
             case 8 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[7] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[7] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 8;
             }
             case 9 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[7] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[7] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[8] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[8] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 9;
             }
             case 10 -> {
-                entities[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[0] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[1] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[2] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[3] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[4] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[5] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[6] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[7] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[7] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[8] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[8] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
-                entities[9] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
+                students[9] = ModEntityTypes.STUDENT.get().spawn((ServerLevel) StartBlock.serverlevel,
                         studentItemStack, player, new BlockPos(0, 80, 0),
                         MobSpawnType.SPAWN_EGG, false, false);
                 return 10;
@@ -295,14 +294,14 @@ public class Game implements Runnable {
                 if (health == 0) {
                     for (int j = 0; j < entityAmount; j++)
                     {
-                        entities[j].kill();
+                        students[j].kill();
                     }
                     break loops;
                 }
 
                 monstersAlive = false;
                 for (int j = 0; j < entityAmount; j++) {
-                    if (entities[j].isAlive()) {
+                    if (students[j].isAlive()) {
                         monstersAlive = true;
                         break;
                     }

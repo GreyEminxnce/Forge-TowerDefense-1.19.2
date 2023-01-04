@@ -18,10 +18,11 @@ public class Student extends Monster
     public static AttributeSupplier setAttributes()
     {
         return Monster.createMobAttributes()
-                .add(Attributes.FOLLOW_RANGE, 35.0)
-                .add(Attributes.ARMOR, 2.0)
-                .add(Attributes.MAX_HEALTH, 20)
-                .add(Attributes.MOVEMENT_SPEED,0.23000000417232513)
+                .add(Attributes.FOLLOW_RANGE, Attributes.FOLLOW_RANGE.getDefaultValue())
+                .add(Attributes.ARMOR, Attributes.ARMOR.getDefaultValue())
+                .add(Attributes.MAX_HEALTH, Attributes.MAX_HEALTH.getDefaultValue())
+                .add(Attributes.MOVEMENT_SPEED,Attributes.MOVEMENT_SPEED.getDefaultValue())
+                .add(Attributes.ARMOR_TOUGHNESS, Attributes.ARMOR_TOUGHNESS.getDefaultValue())
                 .build();
     }
 
