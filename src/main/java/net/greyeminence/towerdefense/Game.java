@@ -40,6 +40,16 @@ public class Game implements Runnable {
         this.player = player;
     }
 
+    private void waitASecond()
+    {
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        }
+        catch (java.lang.InterruptedException exception) {
+            System.out.println("Something went wrong");
+        }
+    }
+
     private int spawn(int roundNumber)
     {
         switch (roundNumber) {
@@ -267,15 +277,21 @@ public class Game implements Runnable {
         loops:
         for (int i = 1; i <= 10; i++)
         {
+            player.sendSystemMessage(Component.literal("Round " + i + " starts in"));
+            waitASecond();
+            player.sendSystemMessage(Component.literal("3"));
+            waitASecond();
+            player.sendSystemMessage(Component.literal("2"));
+            waitASecond();
+            player.sendSystemMessage(Component.literal("1"));
+            waitASecond();
+            player.sendSystemMessage(Component.literal("GO!"));
+
             int entityAmount = spawn(i);
 
             boolean monstersAlive;
             do
             {
-                if (new_health < health) {
-                    health = new_health;
-                    ((ServerPlayer) player).setExperienceLevels(health);
-                }
                 if (health == 0) {
                     break loops;
                 }
@@ -287,8 +303,12 @@ public class Game implements Runnable {
                         break;
                     }
                 }
+                waitASecond();
+                health = new_health;
+                ((ServerPlayer) player).setExperienceLevels(health);
             } while (monstersAlive);
-        }
+        };
+
         if (health == 0)
         {
             player.sendSystemMessage(Component.literal("You lose!"));
@@ -297,19 +317,8 @@ public class Game implements Runnable {
         {
             player.sendSystemMessage(Component.literal("You win"));
         }
-
-
-
-
-
-
     }
 }
 
 
-/*         try {
-            TimeUnit.SECONDS.sleep(30);
-        }
-        catch (java.lang.InterruptedException exception) {
-            System.out.println("Something went wrong");
-        }*/
+
