@@ -1,15 +1,15 @@
 package net.greyeminence.towerdefense.client.renderer;
 
 import net.greyeminence.towerdefense.TowerDefense;
+import net.greyeminence.towerdefense.client.models.StudentModel;
 import net.greyeminence.towerdefense.entity.custom.Student;
-import net.minecraft.client.model.CreeperModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 
-public class StudentRenderer extends MobRenderer<Student, CreeperModel>
+public class StudentRenderer extends MobRenderer<Student, StudentModel>
 {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(TowerDefense.MOD_ID, "textures/entities/student.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/student.png");
 
     public StudentRenderer(EntityRendererProvider.Context ctx)
     {

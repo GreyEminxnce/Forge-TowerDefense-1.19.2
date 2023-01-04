@@ -2,15 +2,11 @@ package net.greyeminence.towerdefense.entity.custom;
 
 import net.greyeminence.towerdefense.EnterExitGoal;
 import net.greyeminence.towerdefense.block.ModBlocks;
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.MoveToBlockGoal;
-import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
 
 public class Student extends Monster
 {

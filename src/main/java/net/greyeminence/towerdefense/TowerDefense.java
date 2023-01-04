@@ -62,7 +62,7 @@ public class TowerDefense
 //Runden
 //Schleife für die Runden
 //Mobs werden gespawnt - done :D
-//Mobs folgen der Strecke
+//Mobs folgen der Strecke - done
 //Lebenscheck/-update - done
 //Check, ob alle Monster tot sind
 //Ende der Runde

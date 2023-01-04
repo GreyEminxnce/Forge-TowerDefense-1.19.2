@@ -1,6 +1,7 @@
 package net.greyeminence.towerdefense.event;
 
 import net.greyeminence.towerdefense.TowerDefense;
+import net.greyeminence.towerdefense.client.models.StudentModel;
 import net.greyeminence.towerdefense.client.renderer.StudentRenderer;
 import net.greyeminence.towerdefense.entity.ModEntityTypes;
 import net.minecraftforge.api.distmarker.Dist;
