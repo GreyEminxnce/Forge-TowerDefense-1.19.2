@@ -18,7 +18,11 @@ public class Student extends Monster
     public static AttributeSupplier setAttributes()
     {
         return Monster.createMobAttributes()
-                .add(Attributes.FOLLOW_RANGE, 35.0).build();
+                .add(Attributes.FOLLOW_RANGE, 35.0)
+                .add(Attributes.ARMOR, 2.0)
+                .add(Attributes.MAX_HEALTH, 20)
+                .add(Attributes.MOVEMENT_SPEED,0.23000000417232513)
+                .build();
     }
 
     @Override

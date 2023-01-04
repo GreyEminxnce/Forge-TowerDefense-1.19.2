@@ -293,6 +293,10 @@ public class Game implements Runnable {
             do
             {
                 if (health == 0) {
+                    for (int j = 0; j < entityAmount; j++)
+                    {
+                        entities[j].kill();
+                    }
                     break loops;
                 }
 

@@ -51,7 +51,7 @@ public class TowerDefense
 }
 
 //Methode, die das Spiel steuert
-//Setup
+//Setup - done
 //Alle Spieler in Gamemode 0 - keine Lösung gefunden - :) doch, Casting regelt
 //Alle Spieler müssen an einen Ort teleportiert werden - done
 //Alle Spieler brauchen ein leeres Inventar - done
@@ -59,17 +59,31 @@ public class TowerDefense
 //Alle Spieler werden gefullhealt - done
 //Kein Hunger - done
 //Leben werden aufgefüllt - done
-//Runden
-//Schleife für die Runden
+//Runden - done
+//Schleife für die Runden - done
 //Mobs werden gespawnt - done :D
 //Mobs folgen der Strecke - done
 //Lebenscheck/-update - done
-//Check, ob alle Monster tot sind
-//Ende der Runde
-//nächste Runde startet in x Sekunden
+//Check, ob alle Monster tot sind - done
+//Ende der Runde - done
+//nächste Runde startet in x Sekunden - done
 
-//Spielende
-//Gewonnen, wenn alle Runden überlebt
-//sonst Verloren
-//Alle Monster killen
+//Spielende - done
+//Gewonnen, wenn alle Runden überlebt - done
+//sonst Verloren - done
+//Alle Monster killen - done
 //Alle Tower entfernen
+
+
+//Mobs
+//Animationen
+
+//Towern
+//Animationen
+//Sachen in Hand
+//AttackRange
+//Fernkampf
+//Spawnegg
+//Geldsystem
+//Villager zum Traden der eggs
+//Ein Tower pro Block

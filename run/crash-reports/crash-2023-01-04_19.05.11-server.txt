@@ -1,0 +1,172 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2023-01-04 19:05:11
+Description: Ticking entity
+
+java.lang.IllegalArgumentException: Can't find attribute minecraft:generic.attack_damage
+	at net.minecraft.world.entity.ai.attributes.AttributeSupplier.getAttributeInstance(AttributeSupplier.java:21) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.attributes.AttributeSupplier.getValue(AttributeSupplier.java:28) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.attributes.AttributeMap.getValue(AttributeMap.java:62) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.LivingEntity.getAttributeValue(LivingEntity.java:1851) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.doHurtTarget(Mob.java:1334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.ai.goal.MeleeAttackGoal.checkAndPerformAttack(MeleeAttackGoal.java:147) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.MeleeAttackGoal.tick(MeleeAttackGoal.java:138) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.WrappedGoal.tick(WrappedGoal.java:65) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.GoalSelector.tickRunningGoals(GoalSelector.java:119) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.GoalSelector.tick(GoalSelector.java:110) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.serverAiStep(Mob.java:712) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.aiStep(LivingEntity.java:2546) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.aiStep(Mob.java:504) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.monster.Monster.aiStep(Monster.java:42) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2291) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.tick(Mob.java:316) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:457) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$3(ServerLevel.java:323) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:54) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:303) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.entity.ai.attributes.AttributeSupplier.getAttributeInstance(AttributeSupplier.java:21) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.attributes.AttributeSupplier.getValue(AttributeSupplier.java:28) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.attributes.AttributeMap.getValue(AttributeMap.java:62) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.LivingEntity.getAttributeValue(LivingEntity.java:1851) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.doHurtTarget(Mob.java:1334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.ai.goal.MeleeAttackGoal.checkAndPerformAttack(MeleeAttackGoal.java:147) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.MeleeAttackGoal.tick(MeleeAttackGoal.java:138) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.WrappedGoal.tick(WrappedGoal.java:65) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.GoalSelector.tickRunningGoals(GoalSelector.java:119) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.ai.goal.GoalSelector.tick(GoalSelector.java:110) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.serverAiStep(Mob.java:712) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.aiStep(LivingEntity.java:2546) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.aiStep(Mob.java:504) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.monster.Monster.aiStep(Monster.java:42) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2291) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.world.entity.Mob.tick(Mob.java:316) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:457) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$3(ServerLevel.java:323) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:54) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:303) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+-- Entity being ticked --
+Details:
+	Entity Type: towerdefense:teacher (net.greyeminence.towerdefense.entity.custom.Teacher)
+	Entity ID: 446
+	Entity Name: entity.towerdefense.teacher
+	Entity's Exact location: 0.25, 80.00, 5.32
+	Entity's Block location: World: (0,80,5), Section: (at 0,0,5 in 0,5,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:457) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$3(ServerLevel.java:323) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:54) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:303) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/129, l='ServerLevel[New World]', x=3.16, y=80.00, z=6.97]]
+	Chunk stats: 2440
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (224,67,-64), Section: (at 0,3,0 in 14,4,-4; chunk contains blocks 224,-64,-64 to 239,319,-49), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Level time: 122918 game time, 122918 day time
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 11832 (now: false), thunder time: 32743 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Linux (amd64) version 5.15.65-1-MANJARO
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 630308512 bytes (601 MiB) / 1551892480 bytes (1480 MiB) up to 2013265920 bytes (1920 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+	Identifier: Intel64 Family 6 Model 78 Stepping 3
+	Microarchitecture: Skylake (Client)
+	Frequency (GHz): 2.40
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: Skylake GT2 [HD Graphics 520]
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 256.00
+	Graphics card #0 deviceId: 0x1916
+	Graphics card #0 versionInfo: unknown
+	Graphics card #1 name: Sunrise Point-LP Integrated Sensor Hub
+	Graphics card #1 vendor: Intel Corporation (0x8086)
+	Graphics card #1 VRAM (MB): 0.00
+	Graphics card #1 deviceId: 0x9d35
+	Graphics card #1 versionInfo: unknown
+	Virtual memory max (MB): 3839.18
+	Virtual memory used (MB): 7060.85
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/129, l='ServerLevel[New World]', x=3.16, y=80.00, z=6.97]]
+	Data Packs: vanilla, mod:towerdefense, mod:forge
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.65.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.65.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.65.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.65.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.65.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		main                                              |Tower Defense Mod             |towerdefense                  |0.0.1-1.19.2        |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.1.65_mapped_official_1.19.2.jar   |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |43.1.65             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 6bfc9216-dd3c-42da-ab31-b3b1c265ed7b
+	FML: 43.1
+	Forge: net.minecraftforge:43.1.65

@@ -3,7 +3,7 @@ package net.greyeminence.towerdefense.client.models;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.greyeminence.towerdefense.TowerDefense;
-import net.greyeminence.towerdefense.entity.custom.Student;
+import net.greyeminence.towerdefense.entity.custom.Teacher;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -11,12 +11,12 @@ import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
-public class StudentModel extends EntityModel<Student> {
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TowerDefense.MOD_ID, "student"), "main");
+public class TeacherModel extends EntityModel<Teacher> {
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TowerDefense.MOD_ID, "teacher"), "main");
 	private final ModelPart body;
 	private final ModelPart head;
 
-	public StudentModel(ModelPart root)
+	public TeacherModel(ModelPart root)
 	{
 		this.body = root.getChild("body");
 		this.head = root.getChild("head");
@@ -35,7 +35,7 @@ public class StudentModel extends EntityModel<Student> {
 	}
 
 	@Override
-	public void setupAnim(Student entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {}
+	public void setupAnim(Teacher entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {}
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
