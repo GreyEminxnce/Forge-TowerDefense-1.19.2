@@ -52,6 +52,18 @@ public class Teacher extends Monster implements RangedAttackMob
         return damageSource != DamageSource.OUT_OF_WORLD;
     }
 
+    @Override
+    public boolean isPushable()
+    {
+        return false;
+    }
+
+    @Override
+    protected boolean shouldDespawnInPeaceful()
+    {
+        return false;
+    }
+
     protected AbstractArrow getArrow(ItemStack p_32156_, float p_32157_) {
         return ProjectileUtil.getMobArrow(this, p_32156_, p_32157_);
     }

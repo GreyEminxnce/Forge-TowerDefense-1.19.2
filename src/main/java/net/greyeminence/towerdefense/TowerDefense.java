@@ -83,8 +83,8 @@ public class TowerDefense
 //Sachen in Hand
 //AttackRange - done
 //Fernkampf
-//Spawnegg
+//Spawnegg - done
 //Geldsystem
 //Villager zum Traden der eggs
-//Ein Tower pro Block
-//Towers can be moved (bad)
+//Ein Tower pro Block - done
+//Towers can be moved (bad) - done
