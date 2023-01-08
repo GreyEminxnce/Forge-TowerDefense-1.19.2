@@ -35,6 +35,10 @@ public class ModBlocks {
             () -> new DeathBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TOWERDEFENSE_TAB);
 
+    public static final RegistryObject<Block> TRADE_BLOCK = registerBlock("trade_block",
+            () -> new TradeBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TOWERDEFENSE_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab); return toReturn;}

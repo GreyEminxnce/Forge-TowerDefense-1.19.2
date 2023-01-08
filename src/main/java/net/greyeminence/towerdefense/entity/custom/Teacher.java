@@ -17,8 +17,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeMod;
 
-import java.util.function.Predicate;
-
 public class Teacher extends Monster implements RangedAttackMob
 {
     public Teacher(EntityType<? extends Monster> entityType, Level level)

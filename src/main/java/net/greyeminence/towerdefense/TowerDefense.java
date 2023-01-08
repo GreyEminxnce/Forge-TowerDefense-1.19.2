@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.greyeminence.towerdefense.block.ModBlocks;
 import net.greyeminence.towerdefense.entity.ModEntityTypes;
 import net.greyeminence.towerdefense.item.ModItems;
+import net.greyeminence.towerdefense.villager.ModVillagers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,7 @@ public class TowerDefense
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntityTypes.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -35,7 +37,10 @@ public class TowerDefense
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        event.enqueueWork(() ->
+        {
+            ModVillagers.registerPOIs();
+        });
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -84,7 +89,9 @@ public class TowerDefense
 //AttackRange - done
 //Fernkampf
 //Spawnegg - done
-//Geldsystem
+//Geldsystem - done
 //Villager zum Traden der eggs
 //Ein Tower pro Block - done
 //Towers can be moved (bad) - done
+//Villager Trades teilweise zu teuer
+//Custom Villager kein Skin und man kann nicht traden

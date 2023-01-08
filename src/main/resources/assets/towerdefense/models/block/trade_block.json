@@ -2,6 +2,6 @@
   "parent": "block/cube_all",
   "textures":
   {
-    "all": "towerdefense:block/death_block"
+    "all": "towerdefense:block/trade_block"
   }
 }

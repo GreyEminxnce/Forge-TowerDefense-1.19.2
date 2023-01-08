@@ -1,7 +1,11 @@
 {
   "block.towerdefense.start_block": "Start Block",
   "block.towerdefense.death_block": "Death Block",
+  "block.towerdefense.trade_block": "Trade Block",
   "item.towerdefense.student_spawn_egg": "Student Spawn Egg",
   "item.towerdefense.teacher_spawn_egg": "Teacher Spawn Egg",
-  "itemGroup.towerdefensetab": "Tower Defense Tab"
+  "item.towerdefense.trade_master_spawn_egg": "Trade Master Spawn Egg",
+  "itemGroup.towerdefensetab": "Tower Defense Tab",
+  "entity.minecraft.villager.towerdefense.trade_master": "Trade Master",
+  "entity.towerdefense.trade_master.towerdefense.trade_master": "Trade Master"
 }

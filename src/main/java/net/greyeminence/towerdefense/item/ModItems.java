@@ -23,6 +23,11 @@ public class ModItems {
     public static final RegistryObject<Item> TEACHER_SPAWN_EGG = ITEMS.register("teacher_spawn_egg",
             () -> new OnePerBlockSpawnEggItem(ModEntityTypes.TEACHER, 0xff1493, 0xffaeb9,
                     new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
+
+    public static final RegistryObject<Item> TRADE_MASTER_SPAWN_EGG = ITEMS.register("trade_master_spawn_egg",
+            () -> new OnePerBlockSpawnEggItem(ModEntityTypes.TRADE_MASTER, 0x4f1f93, 0x2faef9,
+                    new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

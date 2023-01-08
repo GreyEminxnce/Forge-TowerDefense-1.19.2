@@ -340,7 +340,6 @@ public class Game implements Runnable {
                     if (students[j].isAlive())
                     {
                         monstersAlive = true;
-                        break;
                     }
                     else if (!students[j].getHasDropped())
                     {
