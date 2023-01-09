@@ -33,7 +33,7 @@ public class ModEvents
                 ItemStack stack = new ItemStack(ModItems.TEACHER_SPAWN_EGG.get(), 1);
                 int villagerLevel = 1;
 
-                CompoundTag offer = new MerchantOffer(new ItemStack(Items.GOLD_NUGGET, 1), stack,
+                CompoundTag offer = new MerchantOffer(new ItemStack(Items.GOLD_NUGGET, Teacher.getPrice()), stack,
                         Integer.MAX_VALUE,0,1F).createTag();
                 offer.putBoolean("rewardExp", false);
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(offer));

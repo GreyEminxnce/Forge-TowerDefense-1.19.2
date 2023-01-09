@@ -1,6 +1,9 @@
 package net.greyeminence.towerdefense.entity.custom;
 
+import net.greyeminence.towerdefense.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -10,15 +13,19 @@ import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeMod;
 
 public class Teacher extends Monster implements RangedAttackMob
 {
+    protected static final int price = 10;
+    protected static final double sellPriceMultiplier = 0.75;
     public Teacher(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
@@ -62,6 +69,18 @@ public class Teacher extends Monster implements RangedAttackMob
         return false;
     }
 
+    @Override
+    protected InteractionResult mobInteract(Player player, InteractionHand interactionHand)
+    {
+        ItemStack itemstack = player.getItemInHand(interactionHand);
+        if (itemstack.getItem() == ModItems.REMOVER.get())
+        {
+            player.getInventory().add(new ItemStack(Items.GOLD_NUGGET, (int) (price * sellPriceMultiplier)));
+            this.kill();
+        }
+        return InteractionResult.PASS;
+    }
+
     protected AbstractArrow getArrow(ItemStack p_32156_, float p_32157_) {
         return ProjectileUtil.getMobArrow(this, p_32156_, p_32157_);
     }
@@ -84,5 +103,9 @@ public class Teacher extends Monster implements RangedAttackMob
         abstractarrow.shoot(d0, d1 + d3 * 0.20000000298023224, d2, 1.6F, (float)(14 - this.level.getDifficulty().getId() * 4));
         this.playSound(SoundEvents.SKELETON_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
         this.level.addFreshEntity(abstractarrow);
+    }
+    public static int getPrice()
+    {
+        return price;
     }
 }

@@ -90,8 +90,9 @@ public class TowerDefense
 //Fernkampf
 //Spawnegg - done
 //Geldsystem - done
-//Villager zum Traden der eggs
+//Villager zum Traden der eggs - done
 //Ein Tower pro Block - done
 //Towers can be moved (bad) - done
-//Villager Trades teilweise zu teuer
-//Custom Villager kein Skin und man kann nicht traden
+//Villager Trades teilweise zu teuer - done
+//Custom Villager kein Skin und man kann nicht traden - done
+//Tower verkaufen

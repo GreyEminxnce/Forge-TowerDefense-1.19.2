@@ -1,5 +1,6 @@
 package net.greyeminence.towerdefense.entity.custom;
 
+import net.greyeminence.towerdefense.item.ModItems;
 import net.greyeminence.towerdefense.villager.ModVillagers;
 import net.minecraft.core.GlobalPos;
 import net.minecraft.stats.Stats;
@@ -55,26 +56,44 @@ public class TradeMaster extends Villager {
     }
 
     @Override
-    public InteractionResult mobInteract(Player player, InteractionHand interactionHand) {
+    public InteractionResult mobInteract(Player player, InteractionHand interactionHand)
+    {
         ItemStack itemstack = player.getItemInHand(interactionHand);
-        if (itemstack.getItem() != Items.VILLAGER_SPAWN_EGG && this.isAlive() && !this.isTrading() && !this.isSleeping() && !player.isSecondaryUseActive()) {
-            if (this.isBaby()) {
+        if (itemstack.getItem() != Items.VILLAGER_SPAWN_EGG && this.isAlive() && !this.isTrading() && !this.isSleeping() && !player.isSecondaryUseActive())
+        {
+            if (this.isBaby())
+            {
                 return InteractionResult.sidedSuccess(this.level.isClientSide);
-            } else {
+            }
+            else
+            {
                 boolean flag = this.getOffers().isEmpty();
-                if (interactionHand == InteractionHand.MAIN_HAND) {
+                if (interactionHand == InteractionHand.MAIN_HAND)
+                {
                     player.awardStat(Stats.TALKED_TO_VILLAGER);
                 }
-                if (flag) {
+                if (flag)
+                {
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
-                } else {
-                    if (!this.level.isClientSide && !this.offers.isEmpty()) {
+                }
+                else
+                {
+                    if (!this.level.isClientSide && !this.offers.isEmpty())
+                    {
                         this.startTrading(player);
                     }
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
                 }
             }
-        } else {
+        }
+        else if (itemstack.getItem() == ModItems.REMOVER.get())
+        {
+            player.getInventory().add(ModItems.TRADE_MASTER_SPAWN_EGG.get().getDefaultInstance());
+            this.kill();
+            return super.mobInteract(player, interactionHand);
+        }
+        else
+        {
             return super.mobInteract(player, interactionHand);
         }
     }
