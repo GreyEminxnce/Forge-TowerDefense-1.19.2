@@ -9,6 +9,7 @@ import net.greyeminence.towerdefense.client.renderer.TeacherRenderer;
 import net.greyeminence.towerdefense.client.renderer.TradeMasterRenderer;
 import net.greyeminence.towerdefense.entity.ModEntityTypes;
 import net.greyeminence.towerdefense.entity.custom.TradeMaster;
+import net.minecraft.client.model.geom.builders.CubeDeformation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -38,7 +39,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void registerLayerDefinitionsTeacher(EntityRenderersEvent.RegisterLayerDefinitions event)
     {
-        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, TeacherModel::createBodyLayer);
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), true), 64, 64));
     }
     @SubscribeEvent
     public static void entityRenderersTradeMaster(EntityRenderersEvent.RegisterRenderers event)

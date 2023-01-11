@@ -1,10 +1,12 @@
 package net.greyeminence.towerdefense;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
@@ -13,6 +15,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class OnePerBlockSpawnEggItem extends ForgeSpawnEggItem {
@@ -36,5 +39,10 @@ public class OnePerBlockSpawnEggItem extends ForgeSpawnEggItem {
             return super.useOn(useOnContext);
         }
         return InteractionResult.FAIL;
+    }
+    @Override
+    public Optional<Mob> spawnOffspringFromSpawnEgg(Player player, Mob mob, EntityType<? extends Mob> entityType, ServerLevel serverLevel, Vec3 vec3, ItemStack itemStack)
+    {
+        return Optional.empty();
     }
 }

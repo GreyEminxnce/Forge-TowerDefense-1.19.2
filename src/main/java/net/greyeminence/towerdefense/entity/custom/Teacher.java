@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -29,6 +30,8 @@ public class Teacher extends Monster implements RangedAttackMob
     public Teacher(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
+//        this.setItemInHand(InteractionHand.MAIN_HAND, Items.STONE_SWORD.getDefaultInstance());
+        this.setItemInHand(InteractionHand.MAIN_HAND, Items.BOW.getDefaultInstance());
     }
 
     public static AttributeSupplier setAttributes()
@@ -46,7 +49,7 @@ public class Teacher extends Monster implements RangedAttackMob
     @Override
     protected void registerGoals()
     {
-        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.0, false));
+        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.addGoal(2, new RangedAttackGoal(this, 1.0, 20, 20, 5.0f));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Student.class, 10, true, true, null));
     }

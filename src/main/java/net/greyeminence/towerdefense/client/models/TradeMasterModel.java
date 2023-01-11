@@ -3,10 +3,9 @@ package net.greyeminence.towerdefense.client.models;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.greyeminence.towerdefense.TowerDefense;
-import net.greyeminence.towerdefense.entity.custom.TradeMaster;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.HierarchicalModel;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.VillagerHeadModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -23,6 +22,7 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 public class TradeMasterModel<T extends Entity> extends HierarchicalModel<T> implements HeadedModel, VillagerHeadModel
 {
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TowerDefense.MOD_ID, "trade_master"), "main");
+
     private final ModelPart root;
     private final ModelPart head;
     private final ModelPart hat;
@@ -31,14 +31,14 @@ public class TradeMasterModel<T extends Entity> extends HierarchicalModel<T> imp
     private final ModelPart leftLeg;
     protected final ModelPart nose;
 
-    public TradeMasterModel(ModelPart p_171051_) {
-        this.root = p_171051_;
-        this.head = p_171051_.getChild("head");
+    public TradeMasterModel(ModelPart modelPart) {
+        this.root = modelPart;
+        this.head = modelPart.getChild("head");
         this.hat = this.head.getChild("hat");
         this.hatRim = this.hat.getChild("hat_rim");
         this.nose = this.head.getChild("nose");
-        this.rightLeg = p_171051_.getChild("right_leg");
-        this.leftLeg = p_171051_.getChild("left_leg");
+        this.rightLeg = modelPart.getChild("right_leg");
+        this.leftLeg = modelPart.getChild("left_leg");
     }
 
     public static MeshDefinition createBodyModel() {
@@ -61,23 +61,23 @@ public class TradeMasterModel<T extends Entity> extends HierarchicalModel<T> imp
         return this.root;
     }
 
-    public void setupAnim(T p_104053_, float p_104054_, float p_104055_, float p_104056_, float p_104057_, float p_104058_) {
-        boolean $$6 = false;
-        if (p_104053_ instanceof AbstractVillager) {
-            $$6 = ((AbstractVillager) p_104053_).getUnhappyCounter() > 0;
+    public void setupAnim(T trade_master, float f1, float f2, float f3, float f4, float f5) {
+        boolean bool = false;
+        if (trade_master instanceof AbstractVillager) {
+            bool = ((AbstractVillager) trade_master).getUnhappyCounter() > 0;
         }
 
-        this.head.yRot = p_104057_ * 0.017453292F;
-        this.head.xRot = p_104058_ * 0.017453292F;
-        if ($$6) {
-            this.head.zRot = 0.3F * Mth.sin(0.45F * p_104056_);
+        this.head.yRot = f4 * 0.017453292F;
+        this.head.xRot = f5 * 0.017453292F;
+        if (bool) {
+            this.head.zRot = 0.3F * Mth.sin(0.45F * f3);
             this.head.xRot = 0.4F;
         } else {
             this.head.zRot = 0.0F;
         }
 
-        this.rightLeg.xRot = Mth.cos(p_104054_ * 0.6662F) * 1.4F * p_104055_ * 0.5F;
-        this.leftLeg.xRot = Mth.cos(p_104054_ * 0.6662F + 3.1415927F) * 1.4F * p_104055_ * 0.5F;
+        this.rightLeg.xRot = Mth.cos(f1 * 0.6662F) * 1.4F * f2 * 0.5F;
+        this.leftLeg.xRot = Mth.cos(f1 * 0.6662F + 3.1415927F) * 1.4F * f2 * 0.5F;
         this.rightLeg.yRot = 0.0F;
         this.leftLeg.yRot = 0.0F;
     }
@@ -86,10 +86,10 @@ public class TradeMasterModel<T extends Entity> extends HierarchicalModel<T> imp
         return this.head;
     }
 
-    public void hatVisible(boolean p_104060_) {
-        this.head.visible = p_104060_;
-        this.hat.visible = p_104060_;
-        this.hatRim.visible = p_104060_;
+    public void hatVisible(boolean isVisible) {
+        this.head.visible = isVisible;
+        this.hat.visible = isVisible;
+        this.hatRim.visible = isVisible;
     }
 
     @Override

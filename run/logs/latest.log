@@ -1,22 +1,22 @@
-[08Jan2023 21:15:53.264] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 43.1.65, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
-[08Jan2023 21:15:53.271] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.5 by Eclipse Adoptium; OS Linux arch amd64 version 5.15.65-1-MANJARO
-[08Jan2023 21:15:53.519] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/greyeminence/IdeaProjects/Tower%20Defense/gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23115!/ Service=ModLauncher Env=CLIENT
-[08Jan2023 21:15:54.412] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.19.2-43.1.65/ffbd331f54d2b2ab73b999202d1d1d4fd84b1449/javafmllanguage-1.19.2-43.1.65.jar is missing mods.toml file
-[08Jan2023 21:15:54.423] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.19.2-43.1.65/ebdb503c0d56ff59bb83cf66e75e41acc88a45b5/lowcodelanguage-1.19.2-43.1.65.jar is missing mods.toml file
-[08Jan2023 21:15:54.426] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.19.2-43.1.65/4d64e00c789b657297f4ac5e0231861c26bbe69c/mclanguage-1.19.2-43.1.65.jar is missing mods.toml file
-[08Jan2023 21:15:54.429] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.19.2-43.1.65/bd55e2811c5d5dcb111cc92b8af522f75f83d755/fmlcore-1.19.2-43.1.65.jar is missing mods.toml file
-[08Jan2023 21:15:54.572] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[08Jan2023 21:15:57.149] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/forge_gradle/assets, --assetIndex, 1.19]
-[08Jan2023 21:16:03.080] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
-[08Jan2023 21:16:06.294] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/home/greyeminence/IdeaProjects/Tower%20Defense/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.65_mapped_official_1.19.2/forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/assets/.mcassetsroot' uses unexpected schema
-[08Jan2023 21:16:06.295] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/home/greyeminence/IdeaProjects/Tower%20Defense/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.65_mapped_official_1.19.2/forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/data/.mcassetsroot' uses unexpected schema
-[08Jan2023 21:16:06.320] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[08Jan2023 21:16:06.328] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[08Jan2023 21:16:06.497] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[08Jan2023 21:16:07.403] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.1.65, for MC 1.19.2 with MCP 20220805.130853
-[08Jan2023 21:16:07.403] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.1.65 Initialized
-[08Jan2023 21:16:09.931] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [towerdefense]
-[08Jan2023 21:16:10.461] [Render thread/WARN] [com.mojang.text2speech.NarratorLinux/]: ERROR : Couldn't load Narrator library
+[11Jan2023 21:26:48.504] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 43.1.65, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
+[11Jan2023 21:26:48.513] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.5 by Eclipse Adoptium; OS Linux arch amd64 version 5.15.65-1-MANJARO
+[11Jan2023 21:26:48.938] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/greyeminence/IdeaProjects/Tower%20Defense/gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23115!/ Service=ModLauncher Env=CLIENT
+[11Jan2023 21:26:50.250] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.19.2-43.1.65/ffbd331f54d2b2ab73b999202d1d1d4fd84b1449/javafmllanguage-1.19.2-43.1.65.jar is missing mods.toml file
+[11Jan2023 21:26:50.253] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.19.2-43.1.65/ebdb503c0d56ff59bb83cf66e75e41acc88a45b5/lowcodelanguage-1.19.2-43.1.65.jar is missing mods.toml file
+[11Jan2023 21:26:50.256] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.19.2-43.1.65/4d64e00c789b657297f4ac5e0231861c26bbe69c/mclanguage-1.19.2-43.1.65.jar is missing mods.toml file
+[11Jan2023 21:26:50.258] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.19.2-43.1.65/bd55e2811c5d5dcb111cc92b8af522f75f83d755/fmlcore-1.19.2-43.1.65.jar is missing mods.toml file
+[11Jan2023 21:26:50.442] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[11Jan2023 21:26:54.594] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /home/greyeminence/IdeaProjects/Tower Defense/gradle/caches/forge_gradle/assets, --assetIndex, 1.19]
+[11Jan2023 21:27:03.433] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
+[11Jan2023 21:27:07.653] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/home/greyeminence/IdeaProjects/Tower%20Defense/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.65_mapped_official_1.19.2/forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/assets/.mcassetsroot' uses unexpected schema
+[11Jan2023 21:27:07.654] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/home/greyeminence/IdeaProjects/Tower%20Defense/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.65_mapped_official_1.19.2/forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/data/.mcassetsroot' uses unexpected schema
+[11Jan2023 21:27:07.677] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[11Jan2023 21:27:07.684] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[11Jan2023 21:27:07.968] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[11Jan2023 21:27:09.508] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.1.65, for MC 1.19.2 with MCP 20220805.130853
+[11Jan2023 21:27:09.527] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.1.65 Initialized
+[11Jan2023 21:27:13.435] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [towerdefense]
+[11Jan2023 21:27:14.324] [Render thread/WARN] [com.mojang.text2speech.NarratorLinux/]: ERROR : Couldn't load Narrator library
 java.lang.UnsatisfiedLinkError: libflite.so.1: cannot open shared object file: No such file or directory
 	at com.sun.jna.Native.open(Native Method) ~[jna-platform-5.10.0.jar%23120!/:5.10.0 (b0)]
 	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:277) ~[jna-platform-5.10.0.jar%23120!/:5.10.0 (b0)]
@@ -41,90 +41,626 @@ java.lang.UnsatisfiedLinkError: libflite.so.1: cannot open shared object file: N
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23103!/:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23103!/:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
-[08Jan2023 21:16:10.489] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[08Jan2023 21:16:11.514] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[08Jan2023 21:16:12.727] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 43.1.65 Target: 43.2.0
-[08Jan2023 21:16:16.743] [Worker-Main-3/WARN] [net.minecraft.client.renderer.texture.TextureAtlas/]: Texture towerdefense:block/trade_block with size 600x600 limits mip level from 4 to 3
-[08Jan2023 21:16:19.554] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[08Jan2023 21:16:19.555] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[08Jan2023 21:16:19.639] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device Built-in Audio Analog Stereo
-[08Jan2023 21:16:19.643] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[08Jan2023 21:16:20.121] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[08Jan2023 21:16:20.249] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[08Jan2023 21:16:20.250] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[08Jan2023 21:16:20.257] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[08Jan2023 21:16:20.263] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[08Jan2023 21:16:20.264] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[08Jan2023 21:16:20.267] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[08Jan2023 21:16:21.253] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[08Jan2023 21:16:21.379] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[08Jan2023 21:16:21.384] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[08Jan2023 21:16:21.385] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[08Jan2023 21:16:25.046] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[08Jan2023 21:16:57.957] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [tutorialmod:red_maple_log (from main), tutorialmod:red_maple_wood (from main), tutorialmod:stripped_red_maple_log (from main), tutorialmod:stripped_red_maple_wood (from main)] as it is missing following references: tutorialmod:red_maple_log (from main), 
+[11Jan2023 21:27:14.370] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[11Jan2023 21:27:16.184] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[11Jan2023 21:27:17.848] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 43.1.65 Target: 43.2.0
+[11Jan2023 21:27:23.728] [Worker-Main-1/WARN] [net.minecraft.client.renderer.texture.TextureAtlas/]: Texture towerdefense:block/trade_block with size 600x600 limits mip level from 4 to 3
+[11Jan2023 21:27:26.929] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[11Jan2023 21:27:26.931] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[11Jan2023 21:27:26.978] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device Built-in Audio Analog Stereo
+[11Jan2023 21:27:26.980] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[11Jan2023 21:27:27.447] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[11Jan2023 21:27:27.584] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[11Jan2023 21:27:27.585] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[11Jan2023 21:27:27.590] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[11Jan2023 21:27:27.595] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[11Jan2023 21:27:27.596] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[11Jan2023 21:27:27.598] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[11Jan2023 21:27:28.944] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[11Jan2023 21:27:29.147] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[11Jan2023 21:27:29.157] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[11Jan2023 21:27:29.159] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[11Jan2023 21:27:32.058] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[11Jan2023 21:27:44.102] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [tutorialmod:red_maple_log (from main), tutorialmod:red_maple_wood (from main), tutorialmod:stripped_red_maple_log (from main), tutorialmod:stripped_red_maple_wood (from main)] as it is missing following references: tutorialmod:red_maple_log (from main), 
 	tutorialmod:red_maple_wood (from main), 
 	tutorialmod:stripped_red_maple_log (from main), 
 	tutorialmod:stripped_red_maple_wood (from main)
-[08Jan2023 21:16:57.957] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
-[08Jan2023 21:16:57.958] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
-[08Jan2023 21:16:57.960] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [tutorialmod:zircon_ore (from main), tutorialmod:zircon_block (from main), tutorialmod:deepslate_zircon_ore (from main)] as it is missing following references: tutorialmod:zircon_ore (from main), 
+[11Jan2023 21:27:44.103] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
+[11Jan2023 21:27:44.104] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
+[11Jan2023 21:27:44.111] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [tutorialmod:zircon_ore (from main), tutorialmod:zircon_block (from main), tutorialmod:deepslate_zircon_ore (from main)] as it is missing following references: tutorialmod:zircon_ore (from main), 
 	tutorialmod:zircon_block (from main), 
 	tutorialmod:deepslate_zircon_ore (from main)
-[08Jan2023 21:16:57.964] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [tutorialmod:deepslate_zircon_ore (from main)] as it is missing following references: tutorialmod:deepslate_zircon_ore (from main)
-[08Jan2023 21:16:57.973] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
-[08Jan2023 21:16:57.974] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
-[08Jan2023 21:16:58.612] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[08Jan2023 21:16:59.738] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
-[08Jan2023 21:17:00.572] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.19.2
-[08Jan2023 21:17:00.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[08Jan2023 21:17:01.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[08Jan2023 21:17:08.952] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.952] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.953] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:08.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:09.029] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:09.498] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:09.958] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[08Jan2023 21:17:10.477] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
-[08Jan2023 21:17:10.987] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 24%
-[08Jan2023 21:17:11.497] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 41%
-[08Jan2023 21:17:11.974] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 70%
-[08Jan2023 21:17:12.320] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[08Jan2023 21:17:12.334] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 10879 ms
-[08Jan2023 21:17:12.517] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 2, from 10
-[08Jan2023 21:17:12.535] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
-[08Jan2023 21:17:12.954] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[08Jan2023 21:17:13.830] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[08Jan2023 21:17:13.933] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@5037c208
-[08Jan2023 21:17:13.988] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:21993630] logged in with entity id 38 at (12.625532492017213, 80.0, 3.4492168385429327)
-[08Jan2023 21:17:14.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[08Jan2023 21:17:16.811] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 103 advancements
-[08Jan2023 21:18:22.371] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[08Jan2023 21:18:22.389] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08Jan2023 21:18:22.415] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08Jan2023 21:18:22.417] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08Jan2023 21:18:23.227] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[08Jan2023 21:18:23.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[08Jan2023 21:18:23.239] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[08Jan2023 21:18:23.279] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[08Jan2023 21:18:23.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[08Jan2023 21:18:23.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[08Jan2023 21:18:24.656] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[08Jan2023 21:18:24.792] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[08Jan2023 21:18:24.793] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[08Jan2023 21:18:24.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[08Jan2023 21:18:24.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[08Jan2023 21:18:24.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[08Jan2023 21:18:24.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[08Jan2023 21:18:36.229] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[11Jan2023 21:27:44.118] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [tutorialmod:deepslate_zircon_ore (from main)] as it is missing following references: tutorialmod:deepslate_zircon_ore (from main)
+[11Jan2023 21:27:44.125] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
+[11Jan2023 21:27:44.128] [Worker-Main-1/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [#minecraft:logs (from Default)] as it is missing following references: #minecraft:logs (from Default)
+[11Jan2023 21:27:45.023] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[11Jan2023 21:27:46.187] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
+[11Jan2023 21:27:47.193] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.19.2
+[11Jan2023 21:27:47.194] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[11Jan2023 21:27:48.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[11Jan2023 21:28:01.620] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.621] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.621] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.621] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.622] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.622] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.623] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.623] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.623] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.624] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.624] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.624] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.624] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.624] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.638] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.638] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.646] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.647] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.648] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.648] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.649] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.649] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.652] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.653] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.653] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.653] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.653] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:01.955] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:02.463] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[11Jan2023 21:28:02.974] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[11Jan2023 21:28:03.439] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 11%
+[11Jan2023 21:28:03.982] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 26%
+[11Jan2023 21:28:04.474] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
+[11Jan2023 21:28:04.954] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 55%
+[11Jan2023 21:28:05.462] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 68%
+[11Jan2023 21:28:05.941] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 75%
+[11Jan2023 21:28:06.474] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 92%
+[11Jan2023 21:28:06.610] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[11Jan2023 21:28:06.632] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 18215 ms
+[11Jan2023 21:28:06.930] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 2, from 10
+[11Jan2023 21:28:06.936] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 5, from 0
+[11Jan2023 21:28:07.104] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[11Jan2023 21:28:08.175] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[11Jan2023 21:28:08.377] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@72dcf1d
+[11Jan2023 21:28:08.460] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:5d89e621] logged in with entity id 37 at (8.378407927761575, 80.0, 11.30189066506217)
+[11Jan2023 21:28:08.792] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[11Jan2023 21:28:11.959] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 117 advancements
+[11Jan2023 21:28:20.897] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@186aba7a, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:21.875] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@43eb7673, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:22.002] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@60e8c49c, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:22.536] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@40f2b0d, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:24.385] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@7cf41751, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:24.733] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@47e80c12, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:24.946] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@23cfadb2, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:25.140] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@74a9e258, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:32.381] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@106fb1e6, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:35.400] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@5518d2f3, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:140) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:726) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:35.598] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@3a9d3353, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:140) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:726) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:35.807] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@5563f9d4, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:140) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:726) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:35.940] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@38ee921f, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:140) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:726) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:28:56.745] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Unknown entity: minecraft:tower
+[11Jan2023 21:29:01.516] [Server thread/WARN] [net.minecraft.world.entity.EntityType/]: Exception loading entity: 
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.lambda$create$0(EntityType.java:474) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.util.Optional.map(Optional.java:260) ~[?:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:473) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.loadStaticEntity(EntityType.java:551) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.loadEntityRecursive(EntityType.java:507) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.commands.SummonCommand.spawnEntity(SummonCommand.java:65) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.commands.SummonCommand.lambda$register$1(SummonCommand.java:42) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:263) ~[brigadier-1.0.18.jar%23143!/:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:240) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:1239) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:1217) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:68) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:29:01.526] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Unable to summon entity
+[11Jan2023 21:29:11.204] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new entity.towerdefense.teacher]
+[11Jan2023 21:29:11.213] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new entity.towerdefense.teacher
+[11Jan2023 21:29:14.280] [Server thread/WARN] [net.minecraft.world.entity.EntityType/]: Exception loading entity: 
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.lambda$create$0(EntityType.java:474) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.util.Optional.map(Optional.java:260) ~[?:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:473) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.loadStaticEntity(EntityType.java:551) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.loadEntityRecursive(EntityType.java:507) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.commands.SummonCommand.spawnEntity(SummonCommand.java:65) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.commands.SummonCommand.lambda$register$1(SummonCommand.java:42) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:263) ~[brigadier-1.0.18.jar%23143!/:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:240) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:1239) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:1217) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:68) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:140) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:726) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:29:14.290] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Unable to summon entity
+[11Jan2023 21:29:17.807] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils/]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@5cf8e87b, suppressing error
+java.lang.NullPointerException: Cannot load from object array because "this.targets" is null
+	at net.greyeminence.towerdefense.entity.custom.Student.registerGoals(Student.java:44) ~[%23185!/:?]
+	at net.minecraft.world.entity.Mob.<init>(Mob.java:133) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.PathfinderMob.<init>(PathfinderMob.java:14) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.monster.Monster.<init>(Monster.java:31) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.greyeminence.towerdefense.entity.custom.Student.<init>(Student.java:25) ~[%23185!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:469) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.create(EntityType.java:350) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:339) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.entity.EntityType.spawn(EntityType.java:334) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.world.item.SpawnEggItem.useOn(SpawnEggItem.java:85) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:675) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23179%23186!/:?]
+	at net.minecraft.world.item.ItemStack.useOn(ItemStack.java:236) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:352) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1060) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:34) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:8) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:763) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:157) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:131) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:746) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:140) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:726) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:658) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[11Jan2023 21:29:27.311] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[11Jan2023 21:29:27.351] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11Jan2023 21:29:27.427] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11Jan2023 21:29:27.429] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11Jan2023 21:30:04.927] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[11Jan2023 21:30:04.927] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[11Jan2023 21:30:04.951] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[11Jan2023 21:30:04.996] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[11Jan2023 21:30:04.996] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[11Jan2023 21:30:04.997] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[11Jan2023 21:30:09.248] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[11Jan2023 21:30:09.325] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[11Jan2023 21:30:09.328] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[11Jan2023 21:30:09.360] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[11Jan2023 21:30:09.360] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11Jan2023 21:30:09.360] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11Jan2023 21:30:09.360] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11Jan2023 21:30:11.424] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

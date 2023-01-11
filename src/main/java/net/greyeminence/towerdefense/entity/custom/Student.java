@@ -1,7 +1,9 @@
 package net.greyeminence.towerdefense.entity.custom;
 
 import net.greyeminence.towerdefense.EnterExitGoal;
+import net.greyeminence.towerdefense.MoveToBlockPosGoal;
 import net.greyeminence.towerdefense.block.ModBlocks;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -14,10 +16,15 @@ public class Student extends Monster
 {
     private int cashDropAmount = 1;
     private boolean hasDropped = false;
+    private int currentTarget = 0;
+    private MoveToBlockPosGoal[] targets = new MoveToBlockPosGoal[2];
+    private int targetsLength = targets.length;
 
     public Student(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
+        targets[0] = new MoveToBlockPosGoal(this, new BlockPos(0, 80, 0), 1.0);
+        targets[1] = new MoveToBlockPosGoal(this, new BlockPos(20, 80, 0), 1.0);
     }
 
     public static AttributeSupplier setAttributes()
@@ -34,9 +41,24 @@ public class Student extends Monster
     @Override
     protected void registerGoals()
     {
-        this.goalSelector.addGoal(1, new EnterExitGoal(ModBlocks.DEATH_BLOCK.get(), this, 1.0, 200, 255));
-        this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
-        this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.5));
+        this.goalSelector.addGoal(1, targets[0]);
+        this.goalSelector.addGoal(2, targets[1]);
+        this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.5));
+    }
+
+    @Override
+    public void tick()
+    {
+        super.tick();
+        if(currentTarget < targetsLength)
+        {
+            if (targets[currentTarget].isReachedTarget())
+            {
+                this.goalSelector.removeGoal(targets[currentTarget]);
+                currentTarget++;
+            }
+        }
     }
 
     @Override

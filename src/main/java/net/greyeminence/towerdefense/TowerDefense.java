@@ -83,7 +83,7 @@ public class TowerDefense
 //Mobs
 //Animationen
 
-//Towern
+//Tower
 //Animationen
 //Sachen in Hand
 //AttackRange - done
@@ -95,4 +95,5 @@ public class TowerDefense
 //Towers can be moved (bad) - done
 //Villager Trades teilweise zu teuer - done
 //Custom Villager kein Skin und man kann nicht traden - done
-//Tower verkaufen
+//Tower verkaufen - done
+//Path
