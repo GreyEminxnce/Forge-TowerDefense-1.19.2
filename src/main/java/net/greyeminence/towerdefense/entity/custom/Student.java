@@ -9,6 +9,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.WrappedGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
 
@@ -17,14 +18,12 @@ public class Student extends Monster
     private int cashDropAmount = 1;
     private boolean hasDropped = false;
     private int currentTarget = 0;
-    private MoveToBlockPosGoal[] targets = new MoveToBlockPosGoal[2];
-    private int targetsLength = targets.length;
+    private int lastTarget = 1;
 
     public Student(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
-        targets[0] = new MoveToBlockPosGoal(this, new BlockPos(0, 80, 0), 1.0);
-        targets[1] = new MoveToBlockPosGoal(this, new BlockPos(20, 80, 0), 1.0);
+        this.registerGoals();
     }
 
     public static AttributeSupplier setAttributes()
@@ -41,23 +40,25 @@ public class Student extends Monster
     @Override
     protected void registerGoals()
     {
-        this.goalSelector.addGoal(1, targets[0]);
-        this.goalSelector.addGoal(2, targets[1]);
-        this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
-        this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.5));
+        if (currentTarget == 0)
+        {
+            this.goalSelector.addGoal(1, new MoveToBlockPosGoal(this, new BlockPos(0, 80, 0), 1.0));
+        }
+        else if (currentTarget == 1)
+        {
+            this.goalSelector.addGoal(0, new MoveToBlockPosGoal(this, new BlockPos(20, 80, 0), 1.0));
+        }
     }
 
     @Override
     public void tick()
     {
         super.tick();
-        if(currentTarget < targetsLength)
+        if (currentTarget <= lastTarget && ((MoveToBlockPosGoal) ((WrappedGoal) this.goalSelector.getAvailableGoals().toArray()[0]).getGoal()).isReachedTarget())
         {
-            if (targets[currentTarget].isReachedTarget())
-            {
-                this.goalSelector.removeGoal(targets[currentTarget]);
-                currentTarget++;
-            }
+            currentTarget++;
+            this.goalSelector.removeAllGoals();
+            this.registerGoals();
         }
     }
 

@@ -30,7 +30,7 @@ public class MoveToBlockPosGoal extends Goal {
     }
 
     public double acceptedDistance() {
-        return 0.5;
+        return 2;
     }
 
     protected void moveMobToBlock() {
@@ -51,6 +51,7 @@ public class MoveToBlockPosGoal extends Goal {
             }
         } else {
             this.reachedTarget = true;
+            System.out.println("reachedTarget ist true!");
             --this.tryTicks;
         }
 
