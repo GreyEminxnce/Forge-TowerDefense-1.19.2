@@ -28,7 +28,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void registerLayerDefinitionsStudent(EntityRenderersEvent.RegisterLayerDefinitions event)
     {
-        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, StudentModel::createBodyLayer);
+        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), true), 64, 64));
     }
     @SubscribeEvent
     public static void entityRenderersTeacher(EntityRenderersEvent.RegisterRenderers event)

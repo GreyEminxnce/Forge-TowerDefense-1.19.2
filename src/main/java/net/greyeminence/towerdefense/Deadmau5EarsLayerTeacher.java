@@ -4,7 +4,6 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Vector3f;
 import net.greyeminence.towerdefense.client.models.TeacherModel;
-import net.greyeminence.towerdefense.client.renderer.TeacherRenderer;
 import net.greyeminence.towerdefense.entity.custom.Teacher;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -16,10 +15,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class Deadmau5EarsLayerCustom extends RenderLayer<Teacher, TeacherModel<Teacher>> {
+public class Deadmau5EarsLayerTeacher extends RenderLayer<Teacher, TeacherModel<Teacher>> {
     private final RenderLayerParent<Teacher, TeacherModel<Teacher>> teacherModelRenderLayerParent;
 
-    public Deadmau5EarsLayerCustom(RenderLayerParent<Teacher, TeacherModel<Teacher>> teacherModelRenderLayerParent) {
+    public Deadmau5EarsLayerTeacher(RenderLayerParent<Teacher, TeacherModel<Teacher>> teacherModelRenderLayerParent) {
         super(teacherModelRenderLayerParent);
         this.teacherModelRenderLayerParent = teacherModelRenderLayerParent;
     }

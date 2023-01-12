@@ -13,18 +13,18 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
-public interface IClientItemExtensionsCustom extends IClientItemExtensions
+public interface IClientItemExtensionsTeacher extends IClientItemExtensions
 {
-    IClientItemExtensionsCustom DEFAULT = new IClientItemExtensionsCustom() {
+    IClientItemExtensionsTeacher DEFAULT = new IClientItemExtensionsTeacher() {
     };
-    static IClientItemExtensionsCustom of(ItemStack stack) {
+    static IClientItemExtensionsTeacher of(ItemStack stack) {
         return of(stack.getItem());
     }
 
-    static IClientItemExtensionsCustom of(Item item) {
+    static IClientItemExtensionsTeacher of(Item item) {
         Object var2 = item.getRenderPropertiesInternal();
-        IClientItemExtensionsCustom var10000;
-        if (var2 instanceof IClientItemExtensionsCustom e) {
+        IClientItemExtensionsTeacher var10000;
+        if (var2 instanceof IClientItemExtensionsTeacher e) {
             var10000 = e;
         } else {
             var10000 = DEFAULT;
@@ -40,7 +40,7 @@ public interface IClientItemExtensionsCustom extends IClientItemExtensions
     default @NotNull Model getGenericArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, TeacherModel<?> original) {
         TeacherModel<?> replacement = this.getHumanoidArmorModel(livingEntity, itemStack, equipmentSlot, original);
         if (replacement != original) {
-            TowerDefenseHooksClient.copyModelProperties(original, replacement);
+            ForgeHooksClientTeacher.copyModelProperties(original, replacement);
             return replacement;
         } else {
             return original;

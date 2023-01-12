@@ -3,11 +3,7 @@ package net.greyeminence.towerdefense;
 import com.google.common.collect.Maps;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import java.util.Locale;
-import java.util.Map;
-import javax.annotation.Nullable;
-
-import net.greyeminence.towerdefense.client.models.TeacherModel;
+import net.greyeminence.towerdefense.client.models.StudentModel;
 import net.minecraft.client.model.Model;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -26,13 +22,17 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.ForgeHooksClient;
 
+import javax.annotation.Nullable;
+import java.util.Locale;
+import java.util.Map;
+
 @OnlyIn(Dist.CLIENT)
-public class TeacherArmorLayer<T extends LivingEntity, M extends TeacherModel<T>, A extends TeacherModel<T>> extends RenderLayer<T, M> {
+public class StudentArmorLayer<T extends LivingEntity, M extends StudentModel<T>, A extends StudentModel<T>> extends RenderLayer<T, M> {
     private static final Map<String, ResourceLocation> ARMOR_LOCATION_CACHE = Maps.newHashMap();
     private final A innerModel;
     private final A outerModel;
 
-    public TeacherArmorLayer(RenderLayerParent<T, M> renderLayerParent, A innerModel, A outerModel) {
+    public StudentArmorLayer(RenderLayerParent<T, M> renderLayerParent, A innerModel, A outerModel) {
         super(renderLayerParent);
         this.innerModel = innerModel;
         this.outerModel = outerModel;
@@ -50,7 +50,7 @@ public class TeacherArmorLayer<T extends LivingEntity, M extends TeacherModel<T>
         if (itemstack.getItem() instanceof ArmorItem) {
             ArmorItem armoritem = (ArmorItem)itemstack.getItem();
             if (armoritem.getSlot() == equipmentSlot) {
-                ((TeacherModel)this.getParentModel()).copyPropertiesTo(a);
+                ((StudentModel)this.getParentModel()).copyPropertiesTo(a);
                 this.setPartVisibility(a, equipmentSlot);
                 Model model = this.getArmorModelHook(t, itemstack, equipmentSlot, a);
                 this.usesInnerModel(equipmentSlot);
@@ -120,7 +120,7 @@ public class TeacherArmorLayer<T extends LivingEntity, M extends TeacherModel<T>
     }
 
     protected Model getArmorModelHook(T entity, ItemStack itemStack, EquipmentSlot slot, A model) {
-        return ForgeHooksClientTeacher.getArmorModel(entity, itemStack, slot, model);
+        return ForgeHooksClientStudent.getArmorModel(entity, itemStack, slot, model);
     }
 
     public ResourceLocation getArmorResource(Entity entity, ItemStack stack, EquipmentSlot slot, @Nullable String type) {

@@ -5,7 +5,6 @@ import com.mojang.math.Vector3f;
 import net.greyeminence.towerdefense.*;
 import net.greyeminence.towerdefense.client.models.TeacherModel;
 import net.greyeminence.towerdefense.entity.custom.Teacher;
-import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -13,11 +12,8 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.client.renderer.entity.layers.ArrowLayer;
 import net.minecraft.client.renderer.entity.layers.BeeStingerLayer;
-import net.minecraft.client.renderer.entity.layers.CapeLayer;
 import net.minecraft.client.renderer.entity.layers.CustomHeadLayer;
-import net.minecraft.client.renderer.entity.layers.Deadmau5EarsLayer;
 import net.minecraft.client.renderer.entity.layers.ElytraLayer;
-import net.minecraft.client.renderer.entity.layers.ParrotOnShoulderLayer;
 import net.minecraft.client.renderer.entity.layers.PlayerItemInHandLayer;
 import net.minecraft.client.renderer.entity.layers.SpinAttackEffectLayer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
@@ -27,18 +23,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.HumanoidArm;
-import net.minecraft.world.entity.player.PlayerModelPart;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.scores.Objective;
-import net.minecraft.world.scores.Score;
-import net.minecraft.world.scores.Scoreboard;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.ForgeHooksClient;
-import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 @OnlyIn(Dist.CLIENT)
@@ -54,7 +44,7 @@ super(context, new TeacherModel(context.bakeLayer(TeacherModel.LAYER_LOCATION), 
         this.addLayer(new TeacherArmorLayer(this, new TeacherModel(context.bakeLayer(TeacherModel.LAYER_LOCATION), false), new TeacherModel(context.bakeLayer(TeacherModel.LAYER_LOCATION), false)));
         this.addLayer(new PlayerItemInHandLayer(this, context.getItemInHandRenderer()));
         this.addLayer(new ArrowLayer(context, this));
-        this.addLayer(new Deadmau5EarsLayerCustom(this));
+        this.addLayer(new Deadmau5EarsLayerTeacher(this));
 //        this.addLayer(new CapeLayerCustom(this));
         this.addLayer(new CustomHeadLayer(this, context.getModelSet(), context.getItemInHandRenderer()));
         this.addLayer(new ElytraLayer(this, context.getModelSet()));
@@ -141,13 +131,13 @@ super(context, new TeacherModel(context.bakeLayer(TeacherModel.LAYER_LOCATION), 
                 return TeacherModel.ArmPose.CROSSBOW_HOLD;
             }
 
-            TeacherModel.ArmPose forgeArmPose = IClientItemExtensionsCustom.of(itemstack).getArmPose(teacher, interactionHand, itemstack);
+            TeacherModel.ArmPose forgeArmPose = IClientItemExtensionsTeacher.of(itemstack).getArmPose(teacher, interactionHand, itemstack);
             return forgeArmPose != null ? forgeArmPose : TeacherModel.ArmPose.ITEM;
         }
     }
 
     public ResourceLocation getTextureLocation(Teacher teacher) {
-        return DefaultPlayerSkin.getDefaultSkin(teacher.getUUID());
+        return TEXTURE;
     }
 
     protected void scale(Teacher teacher, PoseStack poseStack, float float1) {
@@ -173,14 +163,14 @@ super(context, new TeacherModel(context.bakeLayer(TeacherModel.LAYER_LOCATION), 
     }
 
     public void renderRightHand(PoseStack poseStack, MultiBufferSource multiBufferSource, int int1, Teacher teacher) {
-        if (!TowerDefenseHooksClient.renderSpecificFirstPersonArm(poseStack, multiBufferSource, int1, teacher, HumanoidArm.RIGHT)) {
+        if (!ForgeHooksClientTeacher.renderSpecificFirstPersonArm(poseStack, multiBufferSource, int1, teacher, HumanoidArm.RIGHT)) {
             this.renderHand(poseStack, multiBufferSource, int1, teacher, ((TeacherModel)this.model).rightArm, ((TeacherModel)this.model).rightSleeve);
         }
 
     }
 
     public void renderLeftHand(PoseStack poseStack, MultiBufferSource multiBufferSource, int int1, Teacher teacher) {
-        if (!TowerDefenseHooksClient.renderSpecificFirstPersonArm(poseStack, multiBufferSource, int1, teacher, HumanoidArm.LEFT)) {
+        if (!ForgeHooksClientTeacher.renderSpecificFirstPersonArm(poseStack, multiBufferSource, int1, teacher, HumanoidArm.LEFT)) {
             this.renderHand(poseStack, multiBufferSource, int1, teacher, ((TeacherModel)this.model).leftArm, ((TeacherModel)this.model).leftSleeve);
         }
 
