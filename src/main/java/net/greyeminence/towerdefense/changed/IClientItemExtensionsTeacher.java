@@ -1,4 +1,4 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import net.greyeminence.towerdefense.client.models.TeacherModel;
 import net.greyeminence.towerdefense.entity.custom.Teacher;

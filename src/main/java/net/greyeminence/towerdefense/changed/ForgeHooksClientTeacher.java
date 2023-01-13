@@ -1,4 +1,4 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.greyeminence.towerdefense.client.models.TeacherModel;

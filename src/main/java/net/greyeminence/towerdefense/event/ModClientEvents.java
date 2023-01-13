@@ -28,7 +28,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void registerLayerDefinitionsStudent(EntityRenderersEvent.RegisterLayerDefinitions event)
     {
-        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), true), 64, 64));
+        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
     }
     @SubscribeEvent
     public static void entityRenderersTeacher(EntityRenderersEvent.RegisterRenderers event)
@@ -39,7 +39,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void registerLayerDefinitionsTeacher(EntityRenderersEvent.RegisterLayerDefinitions event)
     {
-        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), true), 64, 64));
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
     }
     @SubscribeEvent
     public static void entityRenderersTradeMaster(EntityRenderersEvent.RegisterRenderers event)

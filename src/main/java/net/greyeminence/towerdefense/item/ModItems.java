@@ -1,11 +1,9 @@
 package net.greyeminence.towerdefense.item;
 
-import net.greyeminence.towerdefense.OnePerBlockSpawnEggItem;
+import net.greyeminence.towerdefense.changed.OnePerBlockSpawnEggItem;
 import net.greyeminence.towerdefense.TowerDefense;
-import net.greyeminence.towerdefense.block.ModBlocks;
 import net.greyeminence.towerdefense.entity.ModEntityTypes;
 import net.greyeminence.towerdefense.item.custom.Remover;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;

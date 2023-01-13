@@ -1,14 +1,10 @@
 package net.greyeminence.towerdefense.entity.custom;
 
-import net.greyeminence.towerdefense.EnterExitGoal;
-import net.greyeminence.towerdefense.MoveToBlockPosGoal;
-import net.greyeminence.towerdefense.block.ModBlocks;
+import net.greyeminence.towerdefense.changed.MoveToBlockPosGoal;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.WrappedGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
@@ -73,6 +69,8 @@ public class Student extends Monster
     {
         return false;
     }
+    @Override
+    public void knockback(double p_147241_, double p_147242_, double p_147243_) {}
 
     public int getCashDropAmount()
     {

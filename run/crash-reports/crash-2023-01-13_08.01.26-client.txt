@@ -1,7 +1,7 @@
 ---- Minecraft Crash Report ----
-// Don't be sad, have a hug! <3
+// I feel sad now :(
 
-Time: 2023-01-12 20:58:24
+Time: 2023-01-13 08:01:26
 Description: Rendering overlay
 
 java.lang.IllegalArgumentException: Failed to create model for towerdefense:student
@@ -140,10 +140,10 @@ java.lang.IllegalArgumentException: Failed to create model for towerdefense:stud
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23103!/:?] {}
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23103!/:?] {}
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
-Caused by: java.lang.ClassCastException: class net.greyeminence.towerdefense.client.renderer.StudentRenderer cannot be cast to class net.minecraft.client.renderer.entity.LivingEntityRenderer (net.greyeminence.towerdefense.client.renderer.StudentRenderer is in module towerdefense@0.0.1-1.19.2 of loader 'TRANSFORMER' @4e1a46fb; net.minecraft.client.renderer.entity.LivingEntityRenderer is in module minecraft@1.19.2 of loader 'TRANSFORMER' @4e1a46fb)
-	at net.greyeminence.towerdefense.changed.StuckInBodyLayerCustom.<init>(StuckInBodyLayerCustom.java:21) ~[%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
-	at net.greyeminence.towerdefense.changed.ArrowLayerCustom.<init>(ArrowLayerCustom.java:20) ~[%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
-	at net.greyeminence.towerdefense.client.renderer.StudentRenderer.<init>(StudentRenderer.java:46) ~[%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
+Caused by: java.util.NoSuchElementException: Can't find part left_sleeve
+	at net.minecraft.client.model.geom.ModelPart.getChild(ModelPart.java:89) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.greyeminence.towerdefense.client.models.StudentModel.<init>(StudentModel.java:96) ~[%23185!/:?] {re:classloading}
+	at net.greyeminence.towerdefense.client.renderer.StudentRenderer.<init>(StudentRenderer.java:43) ~[%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
 	at net.greyeminence.towerdefense.client.renderer.StudentRenderer.<init>(StudentRenderer.java:40) ~[%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
 	at net.minecraft.client.renderer.entity.EntityRenderers.lambda$createEntityRenderers$25(EntityRenderers.java:156) ~[forge-1.19.2-43.1.65_mapped_official_1.19.2.jar%23180!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	... 134 more
@@ -310,7 +310,7 @@ Details:
 	Operating System: Linux (amd64) version 5.15.65-1-MANJARO
 	Java Version: 17.0.5, Eclipse Adoptium
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
-	Memory: 266539232 bytes (254 MiB) / 532676608 bytes (508 MiB) up to 2013265920 bytes (1920 MiB)
+	Memory: 253855856 bytes (242 MiB) / 573571072 bytes (547 MiB) up to 2013265920 bytes (1920 MiB)
 	CPUs: 4
 	Processor Vendor: GenuineIntel
 	Processor Name: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
@@ -331,7 +331,7 @@ Details:
 	Graphics card #1 deviceId: 0x9d35
 	Graphics card #1 versionInfo: unknown
 	Virtual memory max (MB): 3839.18
-	Virtual memory used (MB): 5307.02
+	Virtual memory used (MB): 5265.08
 	Swap memory total (MB): 0.00
 	Swap memory used (MB): 0.00
 	JVM Flags: 0 total; 
@@ -370,6 +370,6 @@ Details:
 		main                                              |Tower Defense Mod             |towerdefense                  |0.0.1-1.19.2        |DONE      |Manifest: NOSIGNATURE
 		forge-1.19.2-43.1.65_mapped_official_1.19.2.jar   |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
 		                                                  |Forge                         |forge                         |43.1.65             |DONE      |Manifest: NOSIGNATURE
-	Crash Report UUID: 952724cd-6114-4e09-a9a7-64183365e9d9
+	Crash Report UUID: daecd968-43cd-4a35-9063-dfbb267ea552
 	FML: 43.1
 	Forge: net.minecraftforge:43.1.65

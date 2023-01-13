@@ -30,8 +30,6 @@ public class Teacher extends Monster implements RangedAttackMob
     public Teacher(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
-//        this.setItemInHand(InteractionHand.MAIN_HAND, Items.STONE_SWORD.getDefaultInstance());
-        this.setItemInHand(InteractionHand.MAIN_HAND, Items.BOW.getDefaultInstance());
     }
 
     public static AttributeSupplier setAttributes()

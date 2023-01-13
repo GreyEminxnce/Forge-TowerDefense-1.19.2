@@ -3,6 +3,7 @@ package net.greyeminence.towerdefense.client.renderer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import net.greyeminence.towerdefense.*;
+import net.greyeminence.towerdefense.changed.*;
 import net.greyeminence.towerdefense.client.models.TeacherModel;
 import net.greyeminence.towerdefense.entity.custom.Teacher;
 import net.minecraft.client.model.geom.ModelPart;
@@ -17,7 +18,6 @@ import net.minecraft.client.renderer.entity.layers.ElytraLayer;
 import net.minecraft.client.renderer.entity.layers.PlayerItemInHandLayer;
 import net.minecraft.client.renderer.entity.layers.SpinAttackEffectLayer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.resources.DefaultPlayerSkin;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -34,7 +34,7 @@ import net.minecraftforge.common.MinecraftForge;
 @OnlyIn(Dist.CLIENT)
 public class TeacherRenderer extends LivingEntityRenderer<Teacher, TeacherModel<Teacher>> {
 
-    private static final ResourceLocation TEXTURE = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/student.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/teacher.png");
     public TeacherRenderer(EntityRendererProvider.Context context)
     {
         this(context, true);

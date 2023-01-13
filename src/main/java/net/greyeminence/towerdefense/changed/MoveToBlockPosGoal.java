@@ -1,4 +1,4 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import java.util.EnumSet;
 import net.minecraft.core.BlockPos;

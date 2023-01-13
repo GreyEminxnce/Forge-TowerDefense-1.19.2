@@ -1,4 +1,4 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;

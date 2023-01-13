@@ -1,12 +1,9 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.greyeminence.towerdefense.client.renderer.TeacherRenderer;
 import net.greyeminence.towerdefense.entity.custom.Teacher;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.entity.player.PlayerRenderer;
-import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.Cancelable;
 import org.jetbrains.annotations.ApiStatus.Internal;
 

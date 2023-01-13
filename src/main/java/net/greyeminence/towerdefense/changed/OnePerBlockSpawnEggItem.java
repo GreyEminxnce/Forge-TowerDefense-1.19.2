@@ -1,4 +1,4 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

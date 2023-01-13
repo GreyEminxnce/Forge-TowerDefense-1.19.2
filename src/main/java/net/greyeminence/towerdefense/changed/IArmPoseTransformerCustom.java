@@ -1,4 +1,4 @@
-package net.greyeminence.towerdefense;
+package net.greyeminence.towerdefense.changed;
 
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.world.entity.HumanoidArm;
