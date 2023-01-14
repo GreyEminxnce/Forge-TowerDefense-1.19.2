@@ -10,11 +10,18 @@ import net.minecraft.world.level.Level;
 
 public class TeacherSwordLevel3 extends Teacher
 {
+    protected static int price = 100;
+
     public TeacherSwordLevel3(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
         ItemStack sword = Items.NETHERITE_SWORD.getDefaultInstance();
         sword.setDamageValue(10);
         this.setItemInHand(InteractionHand.MAIN_HAND,sword);
+    }
+
+    public static int getPrice()
+    {
+        return price;
     }
 }

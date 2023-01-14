@@ -30,6 +30,7 @@ public class ModClientEvents
     {
         event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
     }
+
     @SubscribeEvent
     public static void entityRenderersTeacher(EntityRenderersEvent.RegisterRenderers event)
     {
@@ -41,6 +42,43 @@ public class ModClientEvents
     {
         event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
     }
+
+    @SubscribeEvent
+    public static void entityRenderersTeacherBowLevel1(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_BOW_LEVEL_1.get(), TeacherRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsTeacherBowLevel1(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersTeacherBowLevel2(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_BOW_LEVEL_2.get(), TeacherRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsTeacherBowLevel2(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersTeacherBowLevel3(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_BOW_LEVEL_2.get(), TeacherRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsTeacherBowLevel3(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
     @SubscribeEvent
     public static void entityRenderersTradeMaster(EntityRenderersEvent.RegisterRenderers event)
     {
@@ -52,4 +90,5 @@ public class ModClientEvents
     {
         event.registerLayerDefinition(TradeMasterModel.LAYER_LOCATION, () -> LayerDefinition.create(TradeMasterModel.createBodyModel(), 64, 64));
     }
+
 }

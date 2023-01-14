@@ -150,3 +150,4 @@ public class TradeMaster extends Villager {
         this.updateTrades();
     }
 }
+

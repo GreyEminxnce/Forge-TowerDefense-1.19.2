@@ -6,14 +6,14 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class TeacherSwordLevel1 extends Teacher
+public class TeacherBowLevel1 extends Teacher
 {
     protected static int price = 10;
 
-    public TeacherSwordLevel1(EntityType<? extends Monster> entityType, Level level)
+    public TeacherBowLevel1(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
-        this.setItemInHand(InteractionHand.MAIN_HAND, Items.STONE_SWORD.getDefaultInstance());
+        this.setItemInHand(InteractionHand.MAIN_HAND, Items.BOW.getDefaultInstance());
     }
 
     public static int getPrice()

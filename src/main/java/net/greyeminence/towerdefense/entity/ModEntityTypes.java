@@ -1,9 +1,7 @@
 package net.greyeminence.towerdefense.entity;
 
 import net.greyeminence.towerdefense.TowerDefense;
-import net.greyeminence.towerdefense.entity.custom.Student;
-import net.greyeminence.towerdefense.entity.custom.Teacher;
-import net.greyeminence.towerdefense.entity.custom.TradeMaster;
+import net.greyeminence.towerdefense.entity.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -29,6 +27,36 @@ public class ModEntityTypes
             ENTITY_TYPES.register("teacher", () -> EntityType.Builder.of(Teacher::new,
                     MobCategory.MONSTER).sized(0.6f, 1.95f)
                     .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher").toString()));
+
+    public static final RegistryObject<EntityType<TeacherBowLevel1>> TEACHER_BOW_LEVEL_1 =
+            ENTITY_TYPES.register("teacher_bow_level_1", () -> EntityType.Builder.of(TeacherBowLevel1::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher_bow_level_1").toString()));
+
+    public static final RegistryObject<EntityType<TeacherBowLevel2>> TEACHER_BOW_LEVEL_2 =
+            ENTITY_TYPES.register("teacher_bow_level_2", () -> EntityType.Builder.of(TeacherBowLevel2::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher_bow_level_2").toString()));
+
+    public static final RegistryObject<EntityType<TeacherBowLevel3>> TEACHER_BOW_LEVEL_3 =
+            ENTITY_TYPES.register("teacher_bow_level_3", () -> EntityType.Builder.of(TeacherBowLevel3::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher_bow_level_3").toString()));
+
+    public static final RegistryObject<EntityType<TeacherSwordLevel1>> TEACHER_SWORD_LEVEL_1 =
+            ENTITY_TYPES.register("teacher_sword_level_1", () -> EntityType.Builder.of(TeacherSwordLevel1::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher_sword_level_1").toString()));
+
+    public static final RegistryObject<EntityType<TeacherSwordLevel2>> TEACHER_SWORD_LEVEL_2 =
+            ENTITY_TYPES.register("teacher_sword_level_2", () -> EntityType.Builder.of(TeacherSwordLevel2::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher_sword_level_2").toString()));
+
+    public static final RegistryObject<EntityType<TeacherSwordLevel3>> TEACHER_SWORD_LEVEL_3 =
+            ENTITY_TYPES.register("teacher_sword_level_3", () -> EntityType.Builder.of(TeacherSwordLevel3::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher_sword_level_3").toString()));
 
     public static final RegistryObject<EntityType<TradeMaster>> TRADE_MASTER =
             ENTITY_TYPES.register("trade_master", () -> EntityType.Builder.of(TradeMaster::new,

@@ -25,7 +25,7 @@ import net.minecraftforge.common.ForgeMod;
 
 public class Teacher extends Monster implements RangedAttackMob
 {
-    protected static final int price = 10;
+    protected static int price;
     protected static final double sellPriceMultiplier = 0.75;
     public Teacher(EntityType<? extends Monster> entityType, Level level)
     {
