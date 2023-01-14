@@ -85,11 +85,67 @@ public class ModEvents
         {
             event.put(ModEntityTypes.STUDENT.get(), Student.setAttributes());
         }
+
+        @SubscribeEvent
+        public static void entityAttributeEventStudentElementary(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.STUDENT_ELEMENTARY.get(), StudentElementary.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventStudentIntermediate(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.STUDENT_INTERMEDIATE.get(), StudentIntermediate.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventStudentSenior(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.STUDENT_SENIOR.get(), StudentSenior.setAttributes());
+        }
+
         @SubscribeEvent
         public static void entityAttributeEventTeacher(EntityAttributeCreationEvent event)
         {
             event.put(ModEntityTypes.TEACHER.get(), Teacher.setAttributes());
         }
+
+        @SubscribeEvent
+        public static void entityAttributeEventTeacherBowLevel1(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.TEACHER_BOW_LEVEL_1.get(), TeacherBowLevel1.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventTeacherBowLevel2(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.TEACHER_BOW_LEVEL_2.get(), TeacherBowLevel2.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventTeacherBowLevel3(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.TEACHER_BOW_LEVEL_3.get(), TeacherBowLevel3.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventTeacherSwordLevel1(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.TEACHER_SWORD_LEVEL_1.get(), TeacherSwordLevel1.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventTeacherSwordLevel2(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.TEACHER_SWORD_LEVEL_2.get(), TeacherSwordLevel2.setAttributes());
+        }
+
+        @SubscribeEvent
+        public static void entityAttributeEventTeacherSwordLevel3(EntityAttributeCreationEvent event)
+        {
+            event.put(ModEntityTypes.TEACHER_SWORD_LEVEL_3.get(), TeacherSwordLevel3.setAttributes());
+        }
+
         @SubscribeEvent
         public static void entityAttributeEventTradeMaster(EntityAttributeCreationEvent event)
         {

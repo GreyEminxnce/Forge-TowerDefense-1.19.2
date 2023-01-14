@@ -6,6 +6,9 @@ import net.greyeminence.towerdefense.*;
 import net.greyeminence.towerdefense.changed.*;
 import net.greyeminence.towerdefense.client.models.StudentModel;
 import net.greyeminence.towerdefense.entity.custom.Student;
+import net.greyeminence.towerdefense.entity.custom.StudentElementary;
+import net.greyeminence.towerdefense.entity.custom.StudentIntermediate;
+import net.greyeminence.towerdefense.entity.custom.StudentSenior;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -32,6 +35,10 @@ import net.minecraftforge.common.MinecraftForge;
 public class StudentRenderer extends LivingEntityRendererCustom<Student, StudentModel<Student>> {
 
     private static final ResourceLocation TEXTURE = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/student.png");
+    private static final ResourceLocation TEXTURE_ELEMENTARY = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/student_elementary.png");
+    private static final ResourceLocation TEXTURE_INTERMEDIATE = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/student_intermediate.png");
+    private static final ResourceLocation TEXTURE_SENIOR = new ResourceLocation(TowerDefense.MOD_ID, "textures/entity/student_senior.png");
+
     public StudentRenderer(EntityRendererProvider.Context context)
     {
         this(context, true);
@@ -133,7 +140,20 @@ super(context, new StudentModel(context.bakeLayer(StudentModel.LAYER_LOCATION), 
         }
     }
 
-    public ResourceLocation getTextureLocation(Student student) {
+    public ResourceLocation getTextureLocation(Student student)
+    {
+        if (student instanceof StudentElementary)
+        {
+            return TEXTURE_ELEMENTARY;
+        }
+        if (student instanceof StudentIntermediate)
+        {
+            return TEXTURE_INTERMEDIATE;
+        }
+        if (student instanceof StudentSenior)
+        {
+            return TEXTURE_SENIOR;
+        }
         return TEXTURE;
     }
 

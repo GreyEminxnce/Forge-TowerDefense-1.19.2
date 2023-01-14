@@ -23,7 +23,22 @@ public class ModEntityTypes
                     MobCategory.MONSTER).sized(0.6f, 1.95f)
                     .build(new ResourceLocation(TowerDefense.MOD_ID, "student").toString()));
 
-    public static final RegistryObject<EntityType<Teacher>> TEACHER =
+    public static final RegistryObject<EntityType<StudentElementary>> STUDENT_ELEMENTARY =
+            ENTITY_TYPES.register("student_elementary", () -> EntityType.Builder.of(StudentElementary::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "student_elementary").toString()));
+
+    public static final RegistryObject<EntityType<StudentIntermediate>> STUDENT_INTERMEDIATE =
+            ENTITY_TYPES.register("student_intermediate", () -> EntityType.Builder.of(StudentIntermediate::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "student_intermediate").toString()));
+
+    public static final RegistryObject<EntityType<StudentSenior>> STUDENT_SENIOR =
+            ENTITY_TYPES.register("student_senior", () -> EntityType.Builder.of(StudentSenior::new,
+                    MobCategory.MONSTER).sized(0.6f, 1.95f)
+                    .build(new ResourceLocation(TowerDefense.MOD_ID, "student_senior").toString()));
+
+     public static final RegistryObject<EntityType<Teacher>> TEACHER =
             ENTITY_TYPES.register("teacher", () -> EntityType.Builder.of(Teacher::new,
                     MobCategory.MONSTER).sized(0.6f, 1.95f)
                     .build(new ResourceLocation(TowerDefense.MOD_ID, "teacher").toString()));

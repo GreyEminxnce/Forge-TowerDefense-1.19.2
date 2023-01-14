@@ -32,6 +32,42 @@ public class ModClientEvents
     }
 
     @SubscribeEvent
+    public static void entityRenderersStudentElementary(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.STUDENT_ELEMENTARY.get(), StudentRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsStudentElementary(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersStudentIntermediate(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.STUDENT_INTERMEDIATE.get(), StudentRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsStudentIntermediate(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersStudentSenior(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.STUDENT_SENIOR.get(), StudentRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsStudentSenior(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(StudentModel.LAYER_LOCATION, () -> LayerDefinition.create(StudentModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+       @SubscribeEvent
     public static void entityRenderersTeacher(EntityRenderersEvent.RegisterRenderers event)
     {
         event.registerEntityRenderer(ModEntityTypes.TEACHER.get(), TeacherRenderer::new);
@@ -70,11 +106,47 @@ public class ModClientEvents
     @SubscribeEvent
     public static void entityRenderersTeacherBowLevel3(EntityRenderersEvent.RegisterRenderers event)
     {
-        event.registerEntityRenderer(ModEntityTypes.TEACHER_BOW_LEVEL_2.get(), TeacherRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_BOW_LEVEL_3.get(), TeacherRenderer::new);
     }
 
     @SubscribeEvent
     public static void registerLayerDefinitionsTeacherBowLevel3(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersTeacherSwordLevel1(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_SWORD_LEVEL_1.get(), TeacherRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsTeacherSwordLevel1(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersTeacherSwordLevel2(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_SWORD_LEVEL_2.get(), TeacherRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsTeacherSwordLevel2(EntityRenderersEvent.RegisterLayerDefinitions event)
+    {
+        event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
+    }
+
+    @SubscribeEvent
+    public static void entityRenderersTeacherSwordLevel3(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerEntityRenderer(ModEntityTypes.TEACHER_SWORD_LEVEL_3.get(), TeacherRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayerDefinitionsTeacherSwordLevel3(EntityRenderersEvent.RegisterLayerDefinitions event)
     {
         event.registerLayerDefinition(TeacherModel.LAYER_LOCATION, () -> LayerDefinition.create(TeacherModel.createMesh(new CubeDeformation(0.5F), false), 64, 64));
     }

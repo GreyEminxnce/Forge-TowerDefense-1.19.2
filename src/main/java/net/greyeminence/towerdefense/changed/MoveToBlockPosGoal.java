@@ -30,11 +30,12 @@ public class MoveToBlockPosGoal extends Goal {
     }
 
     public double acceptedDistance() {
-        return 2;
+        return 1.5;
     }
 
-    protected void moveMobToBlock() {
-        this.mob.getNavigation().moveTo((double) ((float) this.blockPos.getX()) + 0.5, (double) (this.blockPos.getY() + 1), (double) ((float) this.blockPos.getZ()) + 0.5, this.speedModifier);
+    protected void moveMobToBlock()
+    {
+        this.mob.getNavigation().moveTo(this.mob.getNavigation().createPath(blockPos, 0), this.speedModifier);
     }
 
     protected BlockPos getMoveToTarget() {
@@ -43,11 +44,12 @@ public class MoveToBlockPosGoal extends Goal {
 
     public void tick() {
         BlockPos blockPosGoal = this.getMoveToTarget();
-        if (!blockPosGoal.closerToCenterThan(this.mob.position(), this.acceptedDistance())) {
+        if (!this.blockPos.closerToCenterThan(this.mob.position(), this.acceptedDistance())) {
             this.reachedTarget = false;
             ++this.tryTicks;
-            if (this.shouldRecalculatePath()) {
-                this.mob.getNavigation().moveTo((double)((float)blockPosGoal.getX()) + 0.5, (double)blockPosGoal.getY(), (double)((float)blockPosGoal.getZ()) + 0.5, this.speedModifier);
+            if (this.shouldRecalculatePath())
+            {
+                this.mob.getNavigation().moveTo(this.mob.getNavigation().createPath( blockPos, 0), this.speedModifier);
             }
         } else {
             this.reachedTarget = true;

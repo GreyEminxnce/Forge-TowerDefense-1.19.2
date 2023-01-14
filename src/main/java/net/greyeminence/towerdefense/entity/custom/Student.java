@@ -38,11 +38,11 @@ public class Student extends Monster
     {
         if (currentTarget == 0)
         {
-            this.goalSelector.addGoal(1, new MoveToBlockPosGoal(this, new BlockPos(0, 80, 0), 1.0));
+            this.goalSelector.addGoal(1, new MoveToBlockPosGoal(this, new BlockPos(0.5, 80.0, 0.5), 1.0));
         }
         else if (currentTarget == 1)
         {
-            this.goalSelector.addGoal(0, new MoveToBlockPosGoal(this, new BlockPos(20, 80, 0), 1.0));
+            this.goalSelector.addGoal(0, new MoveToBlockPosGoal(this, new BlockPos(20.5, 80.0, 0.5), 1.0));
         }
     }
 

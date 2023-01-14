@@ -28,7 +28,6 @@ public class OnePerBlockSpawnEggItem extends ForgeSpawnEggItem {
     @Override
     public InteractionResult useOn(UseOnContext useOnContext)
     {
-        System.out.println("The useOn method was used\n!");
         Level level = useOnContext.getLevel();
         BlockPlaceContext blockPlaceContext = new BlockPlaceContext(useOnContext);
         BlockPos blockPos = blockPlaceContext.getClickedPos();

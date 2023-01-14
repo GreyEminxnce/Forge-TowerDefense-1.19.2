@@ -25,7 +25,7 @@ import net.minecraftforge.common.ForgeMod;
 
 public class Teacher extends Monster implements RangedAttackMob
 {
-    protected static int price;
+    protected int price;
     protected static final double sellPriceMultiplier = 0.75;
     public Teacher(EntityType<? extends Monster> entityType, Level level)
     {
@@ -37,19 +37,17 @@ public class Teacher extends Monster implements RangedAttackMob
         return Monster.createMobAttributes()
                 .add(Attributes.MOVEMENT_SPEED, 0)
                 .add(Attributes.ATTACK_DAMAGE, Attributes.ATTACK_DAMAGE.getDefaultValue())
-                .add(Attributes.ATTACK_SPEED, Attributes.ATTACK_SPEED.getDefaultValue())
+                .add(Attributes.ATTACK_SPEED, Attributes.ATTACK_SPEED.getDefaultValue() * 2)
                 .add(Attributes.ATTACK_KNOCKBACK, Attributes.ATTACK_KNOCKBACK.getDefaultValue())
                 .add(Attributes.KNOCKBACK_RESISTANCE, Double.MAX_VALUE)
-                .add(ForgeMod.ATTACK_RANGE.get(), 3)
+                .add(ForgeMod.ATTACK_RANGE.get(), 5)
                 .build();
     }
 
     @Override
     protected void registerGoals()
     {
-        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.0, false));
-        this.goalSelector.addGoal(2, new RangedAttackGoal(this, 1.0, 20, 20, 5.0f));
-        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Student.class, 10, true, true, null));
+        this.targetSelector.addGoal(0, new NearestAttackableTargetGoal(this, Student.class, 10, true, true, null));
     }
 
     @Override
@@ -76,7 +74,32 @@ public class Teacher extends Monster implements RangedAttackMob
         ItemStack itemstack = player.getItemInHand(interactionHand);
         if (itemstack.getItem() == ModItems.REMOVER.get())
         {
-            player.getInventory().add(new ItemStack(Items.GOLD_NUGGET, (int) (price * sellPriceMultiplier)));
+            int sellPrice = 10;
+            if (this instanceof TeacherBowLevel1)
+            {
+                sellPrice = TeacherBowLevel1.getPrice();
+            }
+            if (this instanceof TeacherBowLevel2)
+            {
+                sellPrice = TeacherBowLevel2.getPrice();
+            }
+            if (this instanceof TeacherBowLevel3)
+            {
+                sellPrice = TeacherBowLevel3.getPrice();
+            }
+            if (this instanceof TeacherSwordLevel1)
+            {
+                sellPrice = TeacherSwordLevel1.getPrice();
+            }
+            if (this instanceof TeacherSwordLevel2)
+            {
+                sellPrice = TeacherSwordLevel2.getPrice();
+            }
+            if (this instanceof TeacherSwordLevel3)
+            {
+                sellPrice = TeacherSwordLevel3.getPrice();
+            }
+            player.getInventory().add(new ItemStack(Items.GOLD_NUGGET, (int) (sellPrice * sellPriceMultiplier)));
             this.kill();
         }
         return InteractionResult.PASS;
@@ -104,9 +127,5 @@ public class Teacher extends Monster implements RangedAttackMob
         abstractarrow.shoot(d0, d1 + d3 * 0.20000000298023224, d2, 1.6F, (float)(14 - this.level.getDifficulty().getId() * 4));
         this.playSound(SoundEvents.SKELETON_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
         this.level.addFreshEntity(abstractarrow);
-    }
-    public static int getPrice()
-    {
-        return price;
     }
 }

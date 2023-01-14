@@ -23,7 +23,19 @@ public class ModItems
             () -> new ForgeSpawnEggItem(ModEntityTypes.STUDENT, 0x22b341, 0x19732e,
                     new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
 
-    public static final RegistryObject<Item> TEACHER_SPAWN_EGG = ITEMS.register("teacher_spawn_egg",
+    public static final RegistryObject<Item> STUDENT_ELEMENTARY_SPAWN_EGG = ITEMS.register("student_elementary_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.STUDENT_ELEMENTARY, 0x22b341, 0xff0000,
+                    new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
+
+    public static final RegistryObject<Item> STUDENT_INTERMEDIATE_SPAWN_EGG = ITEMS.register("student_intermediate_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.STUDENT_INTERMEDIATE, 0x22b341, 0x00ff00,
+                    new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
+
+    public static final RegistryObject<Item> STUDENT_SENIOR_SPAWN_EGG = ITEMS.register("student_senior_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.STUDENT_SENIOR, 0x22b341, 0x0000ff,
+                    new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
+
+       public static final RegistryObject<Item> TEACHER_SPAWN_EGG = ITEMS.register("teacher_spawn_egg",
             () -> new OnePerBlockSpawnEggItem(ModEntityTypes.TEACHER, 0xff1493, 0xffaeb9,
                     new Item.Properties().tab(ModCreativeModeTab.TOWERDEFENSE_TAB)));
 
