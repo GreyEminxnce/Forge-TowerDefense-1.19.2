@@ -8,6 +8,7 @@ import net.minecraft.world.entity.ai.goal.RangedBowAttackGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeMod;
 
@@ -19,27 +20,15 @@ public class TeacherBowLevel2 extends Teacher
     {
         super(entityType, level);
         ItemStack bow = Items.BOW.getDefaultInstance();
-        bow.setDamageValue(5);
+        bow.enchant(Enchantments.POWER_ARROWS, 3);
         this.setItemInHand(InteractionHand.MAIN_HAND, bow);
-    }
-
-    public static AttributeSupplier setAttributes()
-    {
-        return Monster.createMobAttributes()
-                .add(Attributes.MOVEMENT_SPEED, 0)
-                .add(Attributes.ATTACK_DAMAGE, Attributes.ATTACK_DAMAGE.getDefaultValue())
-                .add(Attributes.ATTACK_SPEED, Attributes.ATTACK_SPEED.getDefaultValue() * 4)
-                .add(Attributes.ATTACK_KNOCKBACK, Attributes.ATTACK_KNOCKBACK.getDefaultValue())
-                .add(Attributes.KNOCKBACK_RESISTANCE, Double.MAX_VALUE)
-                .add(ForgeMod.ATTACK_RANGE.get(), 5)
-                .build();
     }
 
      @Override
      protected void registerGoals()
      {
          super.registerGoals();
-         this.goalSelector.addGoal(0, new RangedBowAttackGoal(this, 4.0, 20, 5.0f));
+         this.goalSelector.addGoal(0, new RangedBowAttackGoal(this, 1.0, 20, 5.0f));
      }
 
     public static int getPrice()

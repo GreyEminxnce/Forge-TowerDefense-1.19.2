@@ -8,6 +8,7 @@ import net.minecraft.world.level.Level;
 
 public class StudentElementary extends Student
 {
+    private int cashDropAmount = 2;
     public StudentElementary(EntityType<? extends Monster> entityType, Level level)
     {
         super(entityType, level);
@@ -19,7 +20,7 @@ public class StudentElementary extends Student
                 .add(Attributes.FOLLOW_RANGE, Attributes.FOLLOW_RANGE.getDefaultValue())
                 .add(Attributes.ARMOR, Attributes.ARMOR.getDefaultValue())
                 .add(Attributes.MAX_HEALTH, 10)
-                .add(Attributes.MOVEMENT_SPEED, 0.5)
+                .add(Attributes.MOVEMENT_SPEED, 0.4)
                 .add(Attributes.ARMOR_TOUGHNESS, Attributes.ARMOR_TOUGHNESS.getDefaultValue())
                 .build();
     }

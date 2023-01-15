@@ -24,20 +24,9 @@ public class TeacherSwordLevel2 extends Teacher
      protected void registerGoals()
      {
          super.registerGoals();
-         this.goalSelector.addGoal(0, new MeleeAttackGoal(this, 3.0, false));
+         this.goalSelector.addGoal(0, new MeleeAttackGoal(this, 1.0, false));
      }
 
-    public static AttributeSupplier setAttributes()
-    {
-        return Monster.createMobAttributes()
-                .add(Attributes.MOVEMENT_SPEED, 0)
-                .add(Attributes.ATTACK_DAMAGE, Attributes.ATTACK_DAMAGE.getDefaultValue() * 3)
-                .add(Attributes.ATTACK_SPEED, Attributes.ATTACK_SPEED.getDefaultValue() * 3)
-                .add(Attributes.ATTACK_KNOCKBACK, Attributes.ATTACK_KNOCKBACK.getDefaultValue())
-                .add(Attributes.KNOCKBACK_RESISTANCE, Double.MAX_VALUE)
-                .add(ForgeMod.ATTACK_RANGE.get(), 5)
-                .build();
-    }
     public static int getPrice()
     {
         return price;

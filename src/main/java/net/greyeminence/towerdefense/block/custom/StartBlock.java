@@ -26,7 +26,7 @@ public class StartBlock extends Block{
         serverlevel = level;
         if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND)
         {
-            Thread thread = new Thread(new Game(player));
+            Thread thread = new Thread(new Game(player, level));
             thread.start();
         }
         return super.use(state, level, blockPos, player, hand, blockHitResult);
